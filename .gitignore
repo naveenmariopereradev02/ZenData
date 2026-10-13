@@ -1,0 +1,52 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+*/venv/
+env/
+*/env/
+.venv/
+*/.venv/
+
+# Python testing & builds
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# ZenData runtime session data cache (keep data directory structure)
+zendataproject/backend/app/data/*.pkl
+zendataproject/backend/app/data/*_meta.json
+backend/app/data/*.pkl
+backend/app/data/*_meta.json
+
+# Node & Next.js
+node_modules/
+*/node_modules/
+.next/
+*/.next/
+out/
+*/out/
+.pnp
+.pnp.js
+
+# Environment variables & secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
