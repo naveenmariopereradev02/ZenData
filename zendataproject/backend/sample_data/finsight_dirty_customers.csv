@@ -1,0 +1,23 @@
+customer_id,full_name,age,gender,city,monthly_income,savings_balance,risk_rating,account_status
+CUST-1001,Kasun Perera,24,Male, Colombo ,45000,-2500,High,Active
+CUST-1002,Amara Fernando,31,Female,Kandy,85000,120000,Low,Active
+CUST-1003,Dilshan Silva,22,Male,Galle,38000,-1500,High,Active
+CUST-1004,Nimali Jayasuriya,45,Female, Colombo,110000,340000,Low,Active
+CUST-1005,Rohan Wickramasinghe,,Male,Kurunegala,62000,85000,Medium,Active
+CUST-1006,Thisara Gunaratne,23,Male, Colombo ,41000,0,High,Active
+CUST-1007,Sanduni Mendis,29,Female,Gampaha,78000,,Low,Active
+CUST-1008,Mahesh De Silva,52,Male,Negombo,145000,680000,Low,Active
+CUST-1001,Kasun Perera,24,Male, Colombo ,45000,-2500,High,Active
+CUST-1009,Chathurika Alwis,25,Female,Kandy,52000,-800,High,Active
+CUST-1010,Sajith Bandara,38,Male,Anuradhapura,,190000,Medium,Active
+CUST-1011,Anuki Rathnayake,21,Female,Colombo,35000,12000,High,Active
+CUST-1012,Pradeep Senanayake,49,Male,Galle,125000,410000,Low,Active
+CUST-1003,Dilshan Silva,22,Male,Galle,38000,-1500,High,Active
+CUST-1013,Ruwan Dissanayake,23,Male,Jaffna,44000,,High,Active
+CUST-1014,Hiruni Cooray,34,Female,Colombo,92000,215000,Low,Active
+CUST-1015,Asanka Fonseka,27,Male,Matara,58000,64000,Medium,Active
+CUST-1016,Kavindi Abeysekara,22,Female,Colombo,40000,-3200,High,Active
+CUST-1017,Lasantha Gamage,41,Male,Badulla,73000,110000,Medium,Active
+CUST-1018,Pooja Ranasinghe,,Female,Colombo,88000,175000,Low,Active
+CUST-1019,Nuwan Kulatunga,24,Male,Kandy,46000,-500,High,Active
+CUST-1020,Dinithi Wijesinghe,30,Female,Kurunegala,81000,154000,Low,Active
