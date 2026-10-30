@@ -32,7 +32,13 @@ import {
   ChevronDown,
 } from "lucide-react";
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
+const BACKEND_URL =
+  process.env.NEXT_PUBLIC_BACKEND_URL ||
+  (typeof window !== "undefined" &&
+  window.location.hostname !== "localhost" &&
+  window.location.hostname !== "127.0.0.1"
+    ? "https://zendata-backend.onrender.com"
+    : "http://localhost:8000");
 
 // Sample dataset text representation for 1-click FinSight Lanka demo
 const FINSIGHT_SAMPLE_CSV = `customer_id,full_name,age,gender,city,monthly_income,savings_balance,risk_rating,account_status

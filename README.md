@@ -8,6 +8,10 @@
 
 **ZenData** brings peace, clarity, and mathematical rigor to chaotic tabular data. A modern, web-based SaaS platform engineered for analysts and businesses to drag & drop raw messy spreadsheets, run automated multi-pillar health audits, preview interactive data corrections, and export enterprise-grade cleaned datasets.
 
+## 🌐 Live Demo
+- **Live Web Application:** [https://zendata-frontend.onrender.com](https://zendata-frontend.onrender.com)
+- **Live FastAPI Documentation (Swagger UI):** [https://zendata-backend.onrender.com/docs](https://zendata-backend.onrender.com/docs)
+
 ---
 
 ## ✨ Key Features
