@@ -20,7 +20,4 @@ services:
     startCommand: npm start
     envVars:
       - key: NEXT_PUBLIC_BACKEND_URL
-        fromService:
-          type: web
-          name: zendata-backend
-          envVarKey: RENDER_EXTERNAL_URL
+        value: https://zendata-backend.onrender.com
