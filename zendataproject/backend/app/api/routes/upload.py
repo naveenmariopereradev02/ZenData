@@ -77,7 +77,7 @@ async def upload_dataset(file: UploadFile = File(...)):
     analytics = generate_analytics(df)
 
     # Convert preview rows to JSON-safe dictionaries
-    preview_df = df.head(30).fillna("")
+    preview_df = df.head(30).astype(object).fillna("")
     preview_rows = preview_df.to_dict(orient="records")
 
     return {

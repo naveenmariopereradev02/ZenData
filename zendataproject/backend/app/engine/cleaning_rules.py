@@ -383,6 +383,7 @@ def auto_clean_dataframe(
     # 5. SUBJECTIVE RATINGS (NO FAKE 3-STAR IMPUTATION)
     if "rating" in col_map:
         col = col_map["rating"]
+        cleaned_df[col] = cleaned_df[col].astype(object)
         for i in range(len(cleaned_df)):
             v = cleaned_df.loc[i, col]
             if pd.isna(v):

@@ -75,7 +75,7 @@ async def clean_dataset(payload: CleanRequest):
     new_analytics = generate_analytics(cleaned_df)
 
     # Clean preview rows
-    clean_preview_df = cleaned_df.head(30).fillna("")
+    clean_preview_df = cleaned_df.head(30).astype(object).fillna("")
     clean_preview_rows = clean_preview_df.to_dict(orient="records")
 
     return {
@@ -147,7 +147,7 @@ async def edit_cell(payload: EditCellRequest):
     new_health = calculate_health_score(df)
     new_analytics = generate_analytics(df)
 
-    preview_df = df.head(30).fillna("")
+    preview_df = df.head(30).astype(object).fillna("")
     preview_rows = preview_df.to_dict(orient="records")
 
     return {

@@ -115,7 +115,7 @@ async def export_json(session_id: str):
     """
     df, meta, prefix = _load_session_data(session_id)
 
-    records = df.fillna("").to_dict(orient="records")
+    records = df.astype(object).fillna("").to_dict(orient="records")
     payload = {
         "session_id": session_id,
         "filename": meta.get("filename", f"zendata_{prefix}.json"),
