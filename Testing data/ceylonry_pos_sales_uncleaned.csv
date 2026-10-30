@@ -1,0 +1,303 @@
+Txn ID,Date,Time,Branch,Cashier,Customer Name,Phone,Email,Product,Category,Qty,Unit Price (LKR),Discount,Total (LKR),Payment Method,Loyalty Member,Rating
+TXN1113,2026-10-08,4:26 PM,Kandy ,Kasun Silva,Chamari Rajapaksa,+94783421820,chamari.rajapaksa@hotmail.com,Yoghurt Cup,DAIRY,8,110.00,20%,704.00,cash,No,4
+TXN1050,24/09/2026,2:36 PM,Colombo7,KASUN SILVA,Tharindu Jayawardena,0759106886,tharindu.jayawardena@gmail.com,Eggs (10pk),Diary,5,-120,20,2080.00,Cash,Yes,5
+TXN1278,25 Aug 2026,8:21 AM,Kandy,Nimal Perera,Hiruni Silva,077 447 8434,N/A,Eggs (10pk),DAIRY,1,520.00,0,520.00,Card,yes,3
+TXN1236,08-08-26,13:35:35,Negombo,Nimal Perera,Saman Bandara,not given,saman.bandara@outlook.com,Yoghurt Cup,DAIRY,4,110.00,5%,418.00,qr pay,Y,
+TXN1089,21/08/2026,18:35,?,nimal perera,Isuru Rajapaksa,078-2323049,isuru.rajapaksa@outlook.com,Yoghurt Cup,dairy,6,104.50,0%,627.00,QR Pay,TRUE,
+TXN1275,2026-09-14,2:11 PM,Galle,nimal perera,Amal Rajapaksa,072 247 1406,amal.rajapaksa@gmail.com,  Dhal (1kg) , Groceries,1,420.00,20%,336.00,Credit Card,TRUE,1
+TXN1031,"August 10, 2026",14:42,Kandy ,KASUN SILVA,Tharindu Silva,0781689025,tharindu.silva@outlook.com,Cheese Slices,Diary,4,650.00,0.15,2210.00,Card,false,3
+TXN1256,"August 18, 2026",14:36,Colombo 07,KASUN SILVA,Chamari Jayawardena,0726038238,chamari.jayawardena@gmail.com,milk powder (400g),dairy,5,1150.00,0.1,5175.00,Cash ,No,5
+TXN1196,2026/09/22,18:29:21,Colombo 07,Dilani  Fernando,Amal Silva,0786110305,amal.silva@yahoo.com,ginger beer (1l),Drinks,1,357.00,0.1,321.30,Cash ,TRUE,
+TXN1132,2026/09/10,8:10 PM,Kandy,nimal perera,Saman Perera,0786755892,saman.perera@gmail.com,BOTTLED WATER (1.5L),beverages,2,130.00,0,260.00,Visa,false,4
+TXN1170,08-15-26,14:23:11,Colombo 07,Dilani Fernando,Hiruni Rajapaksa,+94707501626,hiruni.rajapaksa@yahoo.com,soap bar,Home,5,120.00,5%,570.00,Card,Yes,2
+TXN1212,31/02/2026,18:15:06,galle,Nimal Perera,-,0726991787,pradeep.bandara@yahoo.com,Sugar (1kg),Grocery,2,290.00,0.15,493.00,cash,yes,
+TXN1063,2026-09-13,19:33:13,colombo 07,Ruwan Jayasinghe,Nadeeka Gunasekara,0703380261,nadeeka.gunasekara@gmail.com,Eggs (10pk),DAIRY,6,520.00,0,3120.00,Cash ,TRUE,
+TXN1163,2026-10-09,18:11,galle,Kasun Silva,Amal Silva,0704902772,amal.silva@yahoo.com,Soap Bar,household,5,120.00,5,570.00,Cash,Yes,N/A
+TXN1027,19 Sep 2026,4:47 PM,galle,Kasun Silva,Hiruni Perera,+94726009888,hiruni.perera@hotmail.com,Tea Leaves (200g),Drinks,1,483.00,0.05,458.85,Credit Card,Yes,4
+TXN1116,08-27-26,4:59 PM,colombo 07,Dilani Fernando,Amal Jayawardena,0773448176,amal.jayawardena@gmail.com,Bread Loaf,bakery,6,160.00,5%,912.00,CARD,N,4
+TXN1051,2026/09/06,8:46 PM,Maharagama,KASUN SILVA,Isuru Jayawardena,0774189885,isuru.jayawardena@outlook.com,  Soap Bar ,Household,4,126.00,20,403.20,Credit Card,Yes,5
+TXN1247,00/00/0000,17:09,Kandy,Kasun Silva,Lakmal Jayawardena,+94701704531,lakmal.jayawardena@hotmail.com,Rice (5kg), Groceries,5,1312.50,0,6562.50,Online,Yes,1
+TXN1262,2026/10/08,19:42:01,galle,KASUN SILVA,Sanduni Rajapaksa,076-9103837,sanduni.rajapaksa@yahoo.com,Cheese Slices,DAIRY,4,650.00,10%,2340.00,Cash,yes,2
+TXN1109,24 Aug 2026,10:46:56,Maharagama,KASUN SILVA,Lakmal Wickramasinghe,0758525204,lakmal.wickramasinghe@hotmail.com,Tea Leaves (200g),beverages,3,437.00,0.15,1114.35,Visa,Y,
+TXN1193,08-04-26,6:20 PM,Kandy ,Dilani  Fernando,Saman Gunasekara,075 177 1287,saman.gunasekara@gmail.com,FISH BUN,Bakary,3,90.00,5%,256.50,Online,TRUE,5
+TXN1169,2026-09-08,2:05 PM,galle,Ruwan Jayasinghe,Lakmal Bandara,0711914439,lakmal.bandara@outlook.com,Eggs (10pk),Dairy,4,520.00,0%,2080.00,QR Pay,yes,1
+TXN1243,04/09/2026,10:18 AM,MAHARAGAMA,nimal perera,Sanduni Rajapaksa,+94754154127,sanduni.rajapaksa@gmail.com,Chips Pack,SNACKS,5,209.00,15%,888.25,cash,Yes,2
+TXN1019,08-14-26,21:50,Kandy,Nimal Perera,Hiruni Jayawardena,,hiruni.jayawardena@outlook.com,Yoghurt Cup,Diary,7,110.00,20,616.00,Card,No,
+TXN1165,"August 23, 2026",08:11:38,galle,Kasun Silva,Tharindu Fernando,071 103 0163,tharindu.fernando@hotmail.com,BISCUITS PACK,Snacks,7,180.00,0.15,1071.00,QR Pay,TRUE,
+TXN1267,19/08/2026,09:08,galle,nimal perera,Lakmal Rajapaksa,0755593537,lakmal.rajapaksa@yahoo.com,BREAD LOAF,Bakary,1,160.00,5%,152.00,qr pay,N,2
+TXN1277,"October 07, 2026",17:39,galle,nimal perera,Pradeep Rajapaksa,+94756309796,pradeep.rajapaksa@outlook.com,BISCUITS PACK,SNACKS,2,180.00,0.15,306.00,QR Pay,N,
+TXN1047,2026/08/10,21:34:24,MAHARAGAMA,,Pradeep Gunasekara,077-2347467,pradeep.gunasekara@outlook.com,Milk Powder (400g),Dairy,8,1150.00,0%,9200.00,Online,yes,2
+TXN1251,2026-08-06,08:36:41,MAHARAGAMA,nimal perera,Amal Jayawardena,070-9143162,amal.jayawardena@yahoo.com,  Sugar (1kg) , Groceries,3,290.00,20,696.00,Cash,TRUE,2
+TXN1279,10/10/2026,1:53 PM,MAHARAGAMA,Ruwan Jayasinghe,Isuru Wickramasinghe,0751488508,isuru.wickramasinghe@yahoo.com,  Detergent (1kg) ,household,6,610.00,0.0,3660.00,QR Pay,,
+TXN1183,2026/09/29,14:33:19,Colombo 07,Dilani  Fernando,Pradeep Silva,0754263903,pradeep.silva@gmail.com,Eggs (10pk),dairy,999,520.00,0,1040.00,CARD,,2
+TXN1126,04 Sep 2026,20:04:23,Kandy,KASUN SILVA,Nadeeka Gunasekara,072 806 4924,nadeeka.gunasekara@outlook.com,eggs (10pk),dairy,8,520.00,0.0,4160.00,Card,Y,3
+TXN1001,2026-08-04,08:05,Kandy ,,Nadeeka Silva,0772458591,nadeeka.silva@hotmail.com,COCONUT OIL (1L),groceries,5,980.00,0.0,4900.00,Cash,,5
+TXN1253,"August 13, 2026",6:11 PM,Kandy ,Ruwan Jayasinghe,Sanduni Gunasekara,071 424 0006,sanduni.gunasekara@yahoo.com,Detergent (1kg),Home,2,579.50,0.0,1159.00,Cash ,false,1
+TXN1138,09-24-26,13:55,MAHARAGAMA,Dilani  Fernando,Chamari Rajapaksa,0781540736,chamari.rajapaksa@hotmail.com,Cheese Slices,dairy,2,617.50,20,988.00,Cash ,false,2
+TXN1119,2026-10-07,16:09,galle,nimal perera,Amal Gunasekara,0784007598,amal.gunasekara@gmail.com,Rice (5kg),GROCERIES,5,LKR 420,0.0,6562.50,Card,TRUE,4
+TXN1257,2026-08-05,9:49 PM,galle,Nimal Perera,Amal Wickramasinghe,072 828 6418,amal.wickramasinghe@hotmail.com,  Eggs (10pk) ,Diary,7,520.00,20%,2912.00,Card,Yes,3
+TXN1226,01/08/2026,13:05,colombo 07,Ruwan Jayasinghe,Pradeep Gunasekara,070-2075091,pradeep.gunasekara@outlook.com,  Ginger Beer (1L) ,Drinks,2,340.00,5%,646.00,QR Pay,,4
+TXN1109,24 Aug 2026,9:43 AM,Maharagama,KASUN SILVA,Lakmal Wickramasinghe,0758525204,lakmal.wickramasinghe@hotmail.com,Tea Leaves (200g),beverages,3,437.00,0.15,1114.35,Visa,Y,
+TXN1179,29 Aug 2026,12:13:29,Kandy ,Dilani  Fernando,Tharindu Rajapaksa,075-7316209,tharindu.rajapaksa@outlook.com,rice (5kg), Groceries,5,1312.50,20%,-,Cash,TRUE,5
+TXN1062,29 Aug 2026,9:35 PM,galle,KASUN SILVA,Sanduni Wickramasinghe,070 567 3599,sanduni.wickramasinghe@yahoo.com,SOAP BAR,Household,2,120.00,20,192.00,Cash,Y,3
+TXN1003,16/09/2026,21:06:24,MAHARAGAMA,KASUN SILVA,Amal Jayawardena,N/A,amal.jayawardena@gmail.com,Eggs (10pk),DAIRY,4,494.00,0,1976.00,Cash,yes,
+TXN1265,2026/09/02,10:05:46,Kandy ,KASUN SILVA,Tharindu Jayawardena,,tharindu.jayawardena@hotmail.com,  Dhal (1kg) ,groceries,7,420.00,0.1,2646.00,Cash,Y,4
+TXN1091,"August 10, 2026",10:20 AM,Negombo,KASUN SILVA,Lakmal Bandara,0754422938,lakmal.bandara@outlook.com,bottled water (1.5l),beverages,1,130.00,5,123.50,Visa,No,3
+TXN1149,2026-08-09,15:39,Galle,KASUN SILVA,Chamari Perera,071 244 6410,chamari.perera@hotmail.com,  Biscuits Pack ,snacks,5,171.00,5%,812.25,Cash,Y,
+TXN1171,"August 11, 2026",14:34:43,galle,Kasun Silva,Pradeep Jayawardena,not given,pradeep.jayawardena@hotmail.com,Coconut Oil (1L),Groceries,6,1029.00,0.05,5865.30,Cash ,Yes,5
+TXN1055,2026-09-23,19:23:13,MAHARAGAMA,Kasun Silva,Saman Bandara,0767847048,saman.bandara@outlook.com,Toothpaste,Home,two,340.00,15,867.00,Cash,false,3
+TXN1104,12 Oct 2026,18:06,MAHARAGAMA,Dilani Fernando,Lakmal Gunasekara,0766501696,lakmal.gunasekara@gmail.com,Eggs (10pk),DAIRY,4,520.00,0.1,1872.00,Cash,,
+TXN1190,2026/08/01,19:06:57,Kandy,Ruwan Jayasinghe,Saman Bandara,0712511336,saman.bandara@gmail.com,Chicken (1kg),MEAT,1,1282.50,0%,1282.50,Card,Y,
+TXN1154,2026/09/22,19:19,Kandy ,Kasun Silva,Isuru Perera,+94721024528,isuru.perera@hotmail.com,rice (5kg),Groceries,1,1250.00,10%,1125.00,Cash ,yes,1
+TXN1140,17/08/2026,5:40 PM,colombo 07,Ruwan Jayasinghe,,+94787588425,test@test,Milk Powder (400g),Dairy,4,1150.00,0.15,3910.00,Visa,yes,
+TXN1035,04/09/2026,11:47:30,galle,Dilani  Fernando,Saman Jayawardena,072-3005795,saman.jayawardena@yahoo.com,BOTTLED WATER (1.5L),Drinks,5,130.00,0%,650.00,Cash,yes,2
+TXN1227,08-26-26,11:41,Colombo 07,Dilani Fernando,Pradeep Jayawardena,+94763843451,pradeep.jayawardena@gmail.com,Rice (5kg),Grocery,5,1250.00,0.0,6250.00,qr pay,N,5
+TXN1218,01/08/2026,10:10 AM,Colombo 07,KASUN SILVA,Chamari Silva,0765711201,chamari.silva@yahoo.com,soap bar,Home,3,120.00,0%,360.00,Credit Card,,4
+TXN1129,"August 31, 2026",2:34 PM,colombo 07,nimal perera,Lakmal Gunasekara,0708534089,lakmal.gunasekara@hotmail.com,Eggs (10pk),Dairy,5,494.00,0%,2470.00,Cash,TRUE,2
+TXN1177,26/08/2026,13:31:38,Maharagama,Dilani  Fernando,Hiruni Gunasekara,+94773078241,hiruni.gunasekara@gmail.com,FISH BUN,Bakary,5,90.00,20,360.00,cash,Y,
+TXN1093,03/10/2026,17:22,Galle,Ruwan Jayasinghe,Saman Gunasekara,076-8671057,saman.gunasekara@yahoo.com,  Bottled Water (1.5L) ,BEVERAGES,5,130.00,0,650.00,Visa,Yes,
+TXN1133,"September 21, 2026",2:24 PM,Kandy,Kasun Silva,Lakmal Gunasekara,0704310554,lakmal.gunasekara@hotmail.com,  Chicken (1kg) ,Meat,3,,15%,3442.50,Visa,Y,3
+TXN1028,2026/09/21,14:08:55,Maharagama,Nimal Perera,Pradeep Perera,0751454696,pradeep.perera@gmail.com,bread loaf,bakery,999,160.00,0%,480.00,Credit Card,TRUE,3
+TXN1117,13/09/2026,19:34,Kandy ,KASUN SILVA,Hiruni Bandara,0716908535,hiruni.bandara@yahoo.com,TOOTHPASTE,Household,5,340.00,15%,1445.00,Online,Yes,
+TXN1225,2026/10/01,11:28 AM,Maharagama,Nimal Perera,Isuru Gunasekara,0773316405,isuru.gunasekara@gmail.com,TOOTHPASTE,HOUSEHOLD,5,340.00,10,1530.00,Visa,Yes,2
+TXN1032,20 Aug 2026,21:46:37,Negombo,,Sanduni Rajapaksa,0769111742,sanduni.rajapaksa@hotmail.com,Bottled Water (1.5L),Drinks,7,130.00,0.15,773.50,Cash,,5
+TXN1200,27/09/2026,11:39:45,Negombo,KASUN SILVA,null,0786266549,pradeep.rajapaksa@yahoo.com,  Eggs (10pk) ,dairy,3,520.00,5,1482.00,Cash ,No,10
+TXN1056,16/08/2026,20:36,Kandy ,Kasun Silva,Chamari Perera,070-6595355,chamari.perera@yahoo.com,Cheese Slices,dairy,8,650.00,15,4420.00,QR Pay,Yes,3
+TXN1023,05/10/2026,18:19,Maharagama,Nimal Perera,Saman Rajapaksa,0000000000,saman.rajapaksa@gmail.com,Cheese Slices,Diary,8,617.50,0%,4940.00,Credit Card,false,
+TXN1191,07/09/2026,18:41:10,Negombo,Ruwan Jayasinghe,null,070-1769891,lakmal.silva@gmail.com,Dhal (1kg),Groceries,6,399.00,0,2394.00,cash,Y,1
+TXN1208,"September 12, 2026",21:14:58,colombo 07,Ruwan Jayasinghe,Amal Fernando,+94785226314,amal.fernando@gmail.com,  Bottled Water (1.5L) ,BEVERAGES,1,130.00,0.0,130.00,cash,Yes,4
+TXN1221,"October 15, 2026",9:58 PM,colombo 07,Dilani  Fernando,Lakmal Fernando,0701277874,lakmal.fernando@yahoo.com,CHIPS PACK,Snacks,2,220.00,5%,418.00,Credit Card,Yes,
+TXN1001,2026-08-04,08:05,Kandy ,,Nadeeka Silva,0772458591,nadeeka.silva@hotmail.com,COCONUT OIL (1L),groceries,5,980.00,0.0,4900.00,Cash,,5
+TXN1213,2026/08/20,19:41:27,Negombo,Kasun Silva,Nadeeka Perera,072 513 0133,nadeeka.perera@yahoo.com,  Biscuits Pack ,Snack,6,180.00,0.05,1026.00,Credit Card,,3
+TXN1032,20 Aug 2026,21:46:37,Negombo,,Sanduni Rajapaksa,0769111742,sanduni.rajapaksa@hotmail.com,Bottled Water (1.5L),Drinks,7,130.00,0.15,773.50,Cash,,5
+TXN1161,2026-10-01,13:38,Galle,Nimal Perera,Sanduni Wickramasinghe,+94755537157,sanduni.wickramasinghe@yahoo.com,FISH BUN,bakery,8,90.00,10%,648.00,QR Pay,No,2
+TXN1078,10/10/2026,2:40 PM,MAHARAGAMA,Nimal Perera,Tharindu Jayawardena,0723044276,tharindu.jayawardena@gmail.com,milk powder (400g),Dairy,7,1150.00,20%,6440.00,Cash ,Y,3
+TXN1144,2026-09-13,19:51,Negombo,Dilani Fernando,Nadeeka Bandara,0704841091,nadeeka.bandara@hotmail.com,Rice (5kg),Grocery,2,1250.00,15%,2125.00,Online,Y,1
+TXN1021,25 Aug 2026,09:42:58,galle,Dilani Fernando,Lakmal Perera,076 430 5700,lakmal.perera@outlook.com,Biscuits Pack,Snack,5,180.00,15,765.00,Online,false,3
+TXN1083,09 Sep 2026,08:46:55,galle,Ruwan Jayasinghe,Lakmal Fernando,0778447546,lakmal.fernando@outlook.com,  Eggs (10pk) ,Dairy,8,546.00,15%,3712.80,Online,false,3
+TXN1041,04/08/2026,15:33:41,Galle,Kasun Silva,Pradeep Perera,078-5521644,pradeep.perera@gmail.com,fish - balaya (1kg),MEAT,2,980.00,15%,1666.00,Credit Card,TRUE,4
+TXN1054,2026-10-11,10:02:02,MAHARAGAMA,Nimal Perera,Saman Bandara,0776069909,saman.bandara@hotmail.com,Rice (5kg), Groceries,6,1312.50,0%,7875.00,CARD,,3
+TXN1036,"August 23, 2026",12:44 PM,MAHARAGAMA,Nimal Perera,Sanduni Fernando,0721763626,sanduni.fernando@gmail.com,FISH BUN,bakery,5,90.00,0.15,382.50,Credit Card,,3
+TXN1058,05 Oct 2026,18:01:03,colombo 07,Ruwan Jayasinghe,,077 974 8499,chamari.perera@outlook.com,Fish Bun,bakery,2,90.00,0.1,"Rs 4,500",Card,No,3
+TXN1261,"August 26, 2026",10:55:53,Colombo 07,Dilani Fernando,Saman Silva,077 191 4996,saman.silva@yahoo.com,Chicken (1kg),Meat & Fish,6,1350.00,0.2,6480.00,Credit Card,Yes,3
+TXN1207,2026/09/11,6:49 PM,colombo 07,Dilani  Fernando,Sanduni Perera,0772098434,sanduni.perera@yahoo.com,Cheese Slices,Diary,2,650.00,0%,1300.00,Cash ,Y,1
+TXN1181,2026/08/18,8:37 AM,Kandy,Dilani Fernando,Tharindu Rajapaksa,075 778 8043,tharindu.rajapaksa@hotmail.com,  Bread Loaf ,Bakery,1,152.00,0.05,144.40,Online,TRUE,5
+TXN1108,2026/08/08,11:37,colombo 07,Dilani Fernando,Tharindu Perera,075 526 9083,tharindu.perera@gmail.com,Biscuits Pack,Snacks,8,171.00,20%,1094.40,Credit Card,Yes,3
+TXN1122,20 Sep 2026,8:47 PM,Colombo 07,nimal perera,N/A,076 752 8964,pradeep.jayawardena@outlook.com,Milk Powder (400g),Dairy,2,1150.00,0%,2300.00,CARD,N,
+TXN1015,28 Aug 2026,21:34:45,galle,Dilani  Fernando,Saman Jayawardena,072 578 1295,saman.jayawardena@yahoo.com,TOOTHPASTE,Household,-3,340.00,0,1700.00,Online,No,2
+TXN1024,25 Aug 2026,11:11 AM,Kandy ,Ruwan Jayasinghe,Chamari Fernando,123,chamari.fernando@gmail.com,BISCUITS PACK,snacks,7,180.00,5%,1197.00,Credit Card,Y,
+TXN1268,15/09/2026,21:24:31,Maharagama,Kasun Silva,Hiruni Fernando,N/A,hiruni.fernando@outlook.com,Rice (5kg),Groceries,2,1187.50,0.2,1900.00,Cash,yes,4
+TXN1082,yesterday,19:27:05,galle,Dilani  Fernando,Hiruni Bandara,0729712003,hiruni.bandara@outlook.com,GINGER BEER (1L),Drinks,7,340.00,0,2380.00,Card,No,3
+TXN1131,2026-10-04,21:46:09,Galle,Dilani Fernando,Hiruni Silva,+94727978909,hiruni.silva@gmail.com,Biscuits Pack,SNACKS,3,180.00,0,540.00,Credit Card,No,4
+TXN1048,2026-09-25,13:50:03,Negombo,Dilani Fernando,Saman Bandara,+94716024207,saman.bandara@gmail.com,Sugar (1kg),groceries,2,"Rs. 1,250.00",0.15,468.35,qr pay,Y,2
+TXN1017,2026-08-17,7:57 PM,Colombo 07,Dilani  Fernando,Unknown,0761162230,hiruni.gunasekara@gmail.com,BREAD LOAF,Bakary,5,160.00,15%,680.00,CARD,Y,1
+TXN1159,26/09/2026,5:27 PM,colombo 07,Ruwan Jayasinghe,Isuru Silva,0708734211,isuru.silva@gmail.com,cheese slices,Diary,3,free,20%,1560.00,cash,N,2
+TXN1103,08-14-26,11:51:07,Maharagama,KASUN SILVA,Sanduni Bandara,+94719459284,sanduni.bandara@hotmail.com,  Biscuits Pack ,Snack,6,180.00,5%,1026.00,Cash,TRUE,
+TXN1096,"October 05, 2026",21:32:34,galle,Dilani Fernando,,+94756020319,isuru.fernando@outlook.com,Chips Pack,Snack,3,220.00,10,594.00,Online,No,4
+TXN1139,08-18-26,7:18 PM,Galle,Dilani  Fernando,Amal Wickramasinghe,076-5715824,none,  Chips Pack ,Snacks,4,220.00,20%,704.00,CARD,Yes,3
+TXN1252,"August 10, 2026",19:56:26,Colombo 07,Dilani  Fernando,Hiruni Silva,075-2018380,hiruni.silva@outlook.com,Chips Pack,Snacks,1,220.00,15%,187.00,Card,No,2
+TXN1081,08-26-26,08:48,Galle,Dilani Fernando,Isuru Rajapaksa,0767681090,N/A,  Eggs (10pk) ,DAIRY,1,520.00,0,520.00,Card,TRUE,4
+TXN1101,2026-10-15,14:21:45,Colombo 07,KASUN SILVA,Sanduni Jayawardena,0774906349,sanduni.jayawardena@gmail.com,Coconut Oil (1L), Groceries,4,980.00,0%,3920.00,CARD,,10
+TXN1258,"October 12, 2026",17:32,colombo 07,Dilani Fernando,Chamari Fernando,+94707591477,chamari.fernando@hotmail.com,Toothpaste,household,3,340.00,10,918.00,Card,,5
+TXN1248,2026/08/20,11:01:44,Negombo,KASUN SILVA,Chamari Wickramasinghe,0766827024,chamari.wickramasinghe@hotmail.com,Fish Bun,Bakery,2,90.00,0.05,171.00,Cash ,,5
+TXN1076,16 Aug 2026,09:58:14,Negombo,Nimal Perera,Nadeeka Rajapaksa,+94759612629,nadeeka.rajapaksa@yahoo.com,Detergent (1kg),HOUSEHOLD,5,610.00,20,2440.00,Cash,false,five
+TXN1008,12/10/2026,18:30,Galle,nimal perera,Hiruni Silva,078-9937326,,chicken (1kg),meat,2,1350.00,15%,2295.00,Cash ,yes,4
+TXN1012,02 Oct 2026,12:59:50,Galle,Ruwan Jayasinghe,Lakmal Perera,071 735 8113,lakmal.perera@gmail.com,  Tea Leaves (200g) ,BEVERAGES,8,460.00,20%,2944.00,Cash,yes,2
+TXN1079,2026-08-01,4:34 PM,Kandy ,Nimal Perera,Lakmal Fernando,+94772436363,lakmal.fernando@outlook.com,tea leaves (200g),Beverages,6,460.00,0.1,2484.00,cash,yes,
+TXN1148,2026/10/04,16:34,Galle,Nimal Perera,Sanduni Gunasekara,0757749095,sanduni.gunasekara@gmail.com,Ginger Beer (1L),beverages,5,323.00,15%,1372.75,Visa,TRUE,4
+TXN1005,08-19-26,11:08:32,Colombo 07,Dilani  Fernando,Sanduni Rajapaksa,0778187926,sanduni.rajapaksa@hotmail.com,Bottled Water (1.5L),beverages,5,130.00,0%,650.00,Online,false,5
+TXN1141,2026-09-28,20:34,colombo 07,Dilani  Fernando,Amal Silva,0778691502,none,fish bun,bakery,8,90.00,10,648.00,Card,TRUE,5
+TXN1214,"October 02, 2026",11:16 AM,Colombo 07,KASUN SILVA,Pradeep Silva,0785707954,pradeep.silva@yahoo.com,Eggs (10pk),Dairy,2,520.00,0.15,884.00,qr pay,N,1
+TXN1037,07/08/2026,10:51:36,Colombo 07,Kasun Silva,Saman Gunasekara,0752242892,saman.gunasekara@gmail.com,YOGHURT CUP,Diary,5,110.00,0%,550.00,Visa,false,4
+TXN1222,10-04-26,9:02 PM,colombo 07,Kasun Silva,Nadeeka Perera,+94788239315,nadeeka.perera@hotmail.com,toothpaste,Home,2,340.00,5%,646.00,CARD,Y,3
+TXN1201,"October 11, 2026",09:01,Colombo 07,KASUN SILVA,Lakmal Rajapaksa,0788086467,lakmal.rajapaksa@gmail.com,Fish Bun,bakery,N/A,94.50,10%,680.40,Card,yes,2
+TXN1192,2026-09-21,10:44,Maharagama,Nimal Perera,Lakmal Bandara,+94788075620,lakmal.bandara@yahoo.com,GINGER BEER (1L),BEVERAGES,8,340.00,0.2,2176.00,QR Pay,false,
+TXN1271,07/08/2026,8:37 PM,Kandy ,Kasun Silva,Hiruni Silva,+94779399643,hiruni.silva@gmail.com,chips pack,Snack,3,220.00,0.2,528.00,Cash,Y,4
+TXN1184,24 Aug 2026,12:13,galle,Dilani  Fernando,Nadeeka Wickramasinghe,0771973306,nadeeka.wickramasinghe@gmail.com,bread loaf,Bakery,2,160.00,0%,320.00,qr pay,false,
+TXN1164,08-19-26,12:20,colombo 07,Dilani  Fernando,Isuru Silva,072 763 6992,,biscuits pack,Snack,2,189.00,20%,302.40,Cash ,TRUE,2
+TXN1152,16 Sep 2026,19:20,galle,Dilani Fernando,Amal Gunasekara,0716398941,amal.gunasekara@yahoo.com,SOAP BAR,Household,7,120.00,0%,840.00,Cash,Yes,4
+TXN1013,2026-10-14,16:05,Colombo 07,nimal perera,Amal Perera,0768999183,amal.perera@yahoo.com,  Dhal (1kg) ,groceries,1,399.00,0.0,399.00,Card,N,5
+TXN1052,"August 17, 2026",16:58,Galle,Dilani  Fernando,Lakmal Fernando,+94713217273,lakmal.fernando@outlook.com,Fish Bun,Bakary,2,90.00,0,180.00,Card,,1
+TXN1121,2026-10-12,09:43:59,Colombo-07,nimal perera,Chamari Jayawardena,078 897 7571,chamari.jayawardena@outlook.com,Bread Loaf,Bakery,2,168.00,0,336.00,Cash,N,5
+TXN1234,13 Sep 2026,12:28 PM,Maharagama,nimal perera,Lakmal Jayawardena,075 724 6319,lakmal.jayawardena@outlook.com,Chips Pack,Snacks,6,LKR 420,5,1254.00,Cash,false,
+TXN1106,2026/08/29,4:58 PM,Kandy,Dilani  Fernando,Nadeeka Bandara,0000000000,abc@,  Chips Pack ,Snacks,4,220.00,0.05,836.00,Visa,TRUE,N/A
+TXN1197,2026-13-05,09:02,MAHARAGAMA,Kasun Silva,Amal Wickramasinghe,072 589 8671,amal.wickramasinghe@outlook.com,  Bottled Water (1.5L) ,BEVERAGES,1.5,123.50,0%,247.00,Card,N,2
+TXN1127,09-20-26,13:38,MAHARAGAMA,Dilani Fernando,Isuru Bandara,0728224541,isuru.bandara@yahoo.com,rice (5kg),GROCERIES,6,1312.50,5,7481.25,Cash ,,5
+TXN1002,2026-08-01,09:24:06,Negombo,nimal perera,Isuru Rajapaksa,0714612365,isuru.rajapaksa@outlook.com,Fish - Balaya (1kg),MEAT,3,931.00,5%,2653.35,CARD,No,5
+TXN1205,10-07-26,11:56 AM,Negombo,Dilani Fernando,Saman Fernando,0757768215,saman.fernando@gmail.com,Bread Loaf,Bakery,4,160.00,0.1,576.00,Visa,Yes,1
+TXN1264,10-04-26,15:25,Colombo 07,Dilani Fernando,Amal Perera,071 988 2115,abc@,Cheese Slices,DAIRY,8,682.50,15,4641.00,Cash,yes,
+TXN1220,12 Oct 2026,10:14:53,galle,Kasun Silva,Tharindu Silva,071-8536381,tharindu.silva@hotmail.com,Ginger Beer (1L),Drinks,1,323.00,15%,274.55,Cash ,TRUE,4
+TXN1086,2026-09-06,20:43:54,Negombo,KASUN SILVA,Nadeeka Silva,0753896693,nadeeka.silva@hotmail.com,CHIPS PACK,Snack,8,220.00,0,1760.00,QR Pay,Y,
+TXN1049,11 Aug 2026,18:16:29,Colombo 07,Dilani  Fernando,Chamari Bandara,+94763401116,chamari.bandara@yahoo.com,Yoghurt Cup,dairy,7,115.50,15%,687.23,Credit Card,TRUE,5
+TXN1061,10-11-26,21:42:48,Colombo 07,Dilani Fernando,Sanduni Wickramasinghe,077-3050700,none,Milk Powder (400g),DAIRY,1,1207.50,10%,1086.75,qr pay,N,2
+TXN1173,2026-10-11,2:09 PM,galle,nimal perera,Tharindu Bandara,0781207430,tharindu.bandara@hotmail.com,Ginger Beer (1L),Beverages,7,357.00,0,2499.00,Visa,TRUE,4
+TXN1100,2026/10/13,09:22:59,Galle,KASUN SILVA,Isuru Fernando,+94721705758,isuru.fernando@outlook.com,Coconut Oil (1L),groceries,7,980.00,20,5488.00,Visa,yes,2
+TXN1204,2026/10/11,10:02:09,galle,Nimal Perera,Pradeep Rajapaksa,070 654 5923,pradeep.rajapaksa@hotmail.com,FISH - BALAYA (1KG),Meat & Fish,5,980.00,0.0,4900.00,qr pay,TRUE,1
+TXN1026,31 Aug 2026,19:09,Colombo 07,Ruwan Jayasinghe,Sanduni Silva,+94713530518,sanduni.silva@yahoo.com,Eggs (10pk),Diary,999,520.00,0.0,2600.00,Cash,N,
+TXN1068,31/08/2026,20:40:31,galle,Dilani  Fernando,Chamari Fernando,not given,chamari.fernando@gmail.com,milk powder (400g),DAIRY,2,$3.50,0,2300.00,QR Pay,,1
+TXN1137,"August 29, 2026",16:07,Galle,Dilani  Fernando,Chamari Rajapaksa,071-8672579,chamari.rajapaksa@hotmail.com,Rice (5kg), Groceries,5,1250.00,0%,6250.00,Cash ,,5
+TXN1085,2026-10-13,08:47:11,Kandy ,Ruwan Jayasinghe,Lakmal Wickramasinghe,077-5675638,lakmal.wickramasinghe@yahoo.com,Sugar (1kg),GROCERIES,3,304.50,0,913.50,Cash ,,2
+TXN1280,12/09/2026,08:04,Colombo 07,Kasun Silva,Amal Rajapaksa,0766293259,amal.rajapaksa@gmail.com,Toothpaste,Home,8,340.00,0.15,2312.00,Online,Y,5
+TXN1110,01/08/2026,15:22:09,Kandy,KASUN SILVA,Sanduni Gunasekara,0767363203,sanduni.gunasekara@yahoo.com,Chicken (1kg),MEAT,1,1350.00,5%,1282.50,Cash,N,1
+TXN1273,09-12-26,12:46:49,Galle,KASUN SILVA,Nadeeka Fernando,0781860847,nadeeka.fernando@hotmail.com,Yoghurt Cup,dairy,3,110.00,20%,264.00,Cash,yes,-1
+TXN1157,2026-09-03,19:15:22,Kandy ,Nimal Perera,Tharindu Perera,071 649 9465,tharindu.perera@yahoo.com,Bottled Water (1.5L),Drinks,2,130.00,0%,260.00,Cash,false,
+TXN1025,2026/10/07,21:30:28,Kandy,Dilani  Fernando,Sanduni Gunasekara,078 848 1188,sanduni.gunasekara@yahoo.com,Bottled Water (1.5L),BEVERAGES,6,130.00,10%,702.00,Card,,1
+TXN1011,08-14-26,15:15,MAHARAGAMA,Dilani  Fernando,Sanduni Bandara,071-8077999,sanduni.bandara@yahoo.com,Bread Loaf,Bakery,4,160.00,0%,640.00,Card,N,2
+TXN1198,2026/09/20,21:43,MAHARAGAMA,Ruwan Jayasinghe,Chamari Wickramasinghe,070 795 3658,chamari.wickramasinghe@gmail.com,COCONUT OIL (1L), Groceries,4,980.00,20%,3136.00,Credit Card,Yes,5
+TXN1080,"September 15, 2026",13:52,MAHARAGAMA,KASUN SILVA,Saman Wickramasinghe,+94711743829,saman.wickramasinghe@outlook.com,  Rice (5kg) ,groceries,2,1250.00,0%,2500.00,Card,,1
+TXN1155,2026/08/30,9:25 PM,galle,Nimal Perera,Unknown,+94762603516,hiruni.silva@yahoo.com,  Dhal (1kg) ,groceries,7,399.00,0%,2793.00,Card,yes,
+TXN1194,"August 13, 2026",5:03 PM,Maharagama,nimal perera,Chamari Bandara,+94727457158,chamari.bandara@yahoo.com,detergent (1kg),household,7,579.50,15%,3448.03,Credit Card,TRUE,2
+TXN1217,2026/09/11,2:23 PM,Colombo 07,nimal perera,Tharindu Rajapaksa,0763916715,tharindu.rajapaksa@hotmail.com,dhal (1kg),groceries,2,399.00,0.1,718.20,cash,TRUE,4
+TXN1270,"September 27, 2026",20:40,Galle,Ruwan Jayasinghe,Sanduni Gunasekara,+94771658532,sanduni.gunasekara@hotmail.com,Coconut Oil (1L),GROCERIES,8,980.00,0.0,7840.00,QR Pay,false,3
+TXN1111,05 Aug 2026,11:34,Maharagama,nimal perera,null,0771742169,amal.jayawardena@hotmail.com,Coconut Oil (1L), Groceries,8,1029.00,15,6997.20,qr pay,TRUE,2
+TXN1249,"October 09, 2026",21:35,Kandy ,Kasun Silva,Nadeeka Wickramasinghe,+94728858359,nadeeka.wickramasinghe@outlook.com,Eggs (10pk),DAIRY,8,520.00,10,3744.00,Credit Card,Yes,
+TXN1182,2026/08/22,13:41,Negombo,Kasun Silva,Hiruni Fernando,077 533 9457,hiruni.fernando@yahoo.com,Eggs (10pk),Diary,3,520.00,0,1560.00,cash,yes,5
+TXN1166,31/08/2026,11:44:04,Galle,Dilani  Fernando,Saman Wickramasinghe,0751191186,saman.wickramasinghe@outlook.com,  Sugar (1kg) ,Groceries,6,290.00,0%,1740.00,CARD,,
+TXN1219,"October 15, 2026",5:10 PM,Kandy ,Nimal Perera,Lakmal Perera,071-1723841,lakmal.perera@yahoo.com,Cheese Slices,Dairy,999,617.50,20%,1482.00,Card,Y,5
+TXN1099,"October 09, 2026",12:14:19,Kandy,KASUN SILVA,Tharindu Bandara,071 513 5904,tharindu.bandara@outlook.com,bread loaf,bakery,6,152.00,0.2,729.60,cash,yes,3
+TXN1097,09/09/2026,4:40 PM,colombo 07,Kasun Silva,Tharindu Jayawardena,077 186 1596,tharindu.jayawardena@hotmail.com,Biscuits Pack,Snacks,1,189.00,5%,179.55,Cash,Yes,4
+TXN1059,19 Aug 2026,16:38,,Dilani  Fernando,Pradeep Wickramasinghe,075 990 1266,none,  Chips Pack ,snacks,2,220.00,0.0,440.00,Credit Card,N,4
+TXN1135,"August 31, 2026",10:36:24,Maharagama,Ruwan Jayasinghe,Isuru Fernando,076 751 7332,isuru.fernando@hotmail.com,COCONUT OIL (1L),groceries,5,980.00,0%,4900.00,Credit Card,yes,2
+TXN1184,24 Aug 2026,12:13,galle,Dilani  Fernando,Nadeeka Wickramasinghe,0771973306,nadeeka.wickramasinghe@gmail.com,bread loaf,Bakery,2,160.00,0%,320.00,qr pay,false,
+TXN1238,2026/09/10,17:33:28,,Kasun Silva,Tharindu Gunasekara,0728464156,tharindu.gunasekara@outlook.com,Chicken (1kg),meat,6,1282.50,0,7695.00,Cash ,No,2
+TXN1228,"August 09, 2026",11:29:59,galle,Nimal Perera,Sanduni Wickramasinghe,0725639031,sanduni.wickramasinghe@yahoo.com,Rice (5kg),Grocery,2,1312.50,0%,2625.00,Visa,No,5
+TXN1102,06/09/2026,14:56,Colombo 07,Dilani  Fernando,Amal Silva,+94774896008,amal.silva@gmail.com,cheese slices,dairy,6,650.00,15,3315.00,Cash,Yes,3
+TXN1118,09-22-26,8:39 AM,galle,Ruwan Jayasinghe,Saman Fernando,070 466 9507,saman.fernando@hotmail.com,rice (5kg),Groceries,3,1187.50,0%,3562.50,Visa,false,1
+TXN1172,06/10/2026,8:27 AM,colombo 07,Kasun Silva,Hiruni Fernando,071 455 4926,hiruni.fernando@yahoo.com,Biscuits Pack,Snack,3,180.00,20,432.00,Cash ,No,1
+TXN1175,03/08/2026,12:47:28,Galle,KASUN SILVA,Tharindu Bandara,+94782647814,tharindu.bandara@yahoo.com,FISH BUN,Bakary,6,90.00,0%,540.00,Cash,,2
+TXN1030,"September 30, 2026",17:47,Maharagama,Dilani Fernando,Hiruni Rajapaksa,0787189034,hiruni.rajapaksa@yahoo.com,MILK POWDER (400G),Dairy,2,1207.50,0,2415.00,qr pay,false,4
+TXN1067,08-12-26,19:21:14,Maharagama,Nimal Perera,Lakmal Gunasekara,076-2319479,lakmal.gunasekara@hotmail.com,  Fish Bun ,Bakery,7,90.00,0%,630.00,cash,TRUE,
+TXN1163,2026-10-09,16:30:00,galle,Kasun Silva,Amal Silva,0704902772,amal.silva@yahoo.com,Soap Bar,household,5,120.00,5,570.00,Cash,Yes,N/A
+TXN1224,"August 14, 2026",1:39 PM,colombo 07,Dilani  Fernando,Pradeep Rajapaksa,0729994347,pradeep.rajapaksa@hotmail.com,fish bun,Bakary,3,90.00,0.15,229.50,QR Pay,TRUE,5
+TXN1088,22/09/2026,9:49 PM,galle,Kasun Silva,Saman Bandara,0759679860,saman.bandara@outlook.com,tea leaves (200g),Beverages,2,460.00,0%,,Visa,Y,3
+TXN1146,01/09/2026,16:38,colombo 07,Dilani Fernando,Chamari Rajapaksa,078 145 0038,chamari.rajapaksa@outlook.com,Milk Powder (400g),dairy,5,1092.50,0.0,5462.50,CARD,No,2
+TXN1053,29 Aug 2026,1:43 PM,Galle,nimal perera,Saman Gunasekara,+94705436878,N/A,  Milk Powder (400g) ,DAIRY,7,1207.50,0%,8452.50,Online,N,4
+TXN1241,10-09-26,08:00,Negombo,Dilani Fernando,Tharindu Wickramasinghe,+94755358838,tharindu.wickramasinghe@yahoo.com,SOAP BAR,Household,4,free,0.05,456.00,Credit Card,yes,1
+TXN1162,04/09/2026,5:20 PM,Negombo,nimal perera,-,0783914404,lakmal.wickramasinghe@yahoo.com,  Chicken (1kg) ,Meat & Fish,1,1350.00,10%,1215.00,qr pay,N,
+TXN1112,"August 19, 2026",3:03 PM,colombo 07,,Tharindu Perera,076-3938247,tharindu.perera@hotmail.com,Eggs (10pk),Diary,4,520.00,0.0,2080.00,QR Pay,yes,4
+TXN1168,2026/08/10,10:38:56,Maharagama,Nimal Perera,Pradeep Bandara,0771519979,pradeep.bandara@hotmail.com,Yoghurt Cup,dairy,2,110.00,10%,198.00,CARD,yes,
+TXN1189,"October 05, 2026",11:22:45,Galle,Kasun Silva,Saman Bandara,0714351238,saman.bandara@outlook.com,COCONUT OIL (1L),Grocery,2,980.00,0%,1960.00,Cash ,,3
+TXN1098,2026/09/23,10:33 AM,Negombo,KASUN SILVA,Chamari Gunasekara,+94768912226,chamari.gunasekara@gmail.com,BREAD LOAF,bakery,3,160.00,15,408.00,QR Pay,,5
+TXN1105,2026-09-12,18:07:29,Maharagama,Ruwan Jayasinghe,Pradeep Perera,072 703 2283,pradeep.perera@yahoo.com,FISH - BALAYA (1KG),Meat & Fish,5,1029.00,15%,4373.25,Online,yes,3
+TXN1125,yesterday,14:24,Kandy ,Kasun Silva,Pradeep Wickramasinghe,078-7463219,pradeep.wickramasinghe@gmail.com,RICE (5KG),groceries,6,1312.50,0.0,7875.00,QR Pay,Y,3
+TXN1260,09-11-26,13:38,Galle,Kasun Silva,Lakmal Gunasekara,0726843636,lakmal.gunasekara@yahoo.com,TEA LEAVES (200G),BEVERAGES,2,460.00,15%,782.00,Credit Card,Yes,
+TXN1266,09-12-26,7:45 PM,Maharagama,Ruwan Jayasinghe,Chamari Fernando,0764394202,chamari.fernando@yahoo.com,  Eggs (10pk) ,dairy,8,546.00,0,4368.00,Card,No,2
+TXN1038,2026/09/08,11:16,Maharagama,Kasun Silva,Pradeep Perera,0762664863,pradeep.perera@yahoo.com,BOTTLED WATER (1.5L),Beverages,7,130.00,10%,819.00,Cash,false,4
+TXN1215,03/09/2026,15:32,colombo 07,Dilani Fernando,Nadeeka Wickramasinghe,075-4746463,nadeeka.wickramasinghe@outlook.com,Toothpaste,household,8,323.00,20%,2067.20,Visa,Y,4
+TXN1087,10-05-26,16:36:23,Kandy ,Kasun Silva,Nadeeka Jayawardena,078-9288312,nadeeka.jayawardena@gmail.com,Fish Bun,Bakery,4,90.00,0,360.00,CARD,,5
+TXN1009,"September 26, 2026",11:00 AM,Colombo 07,Kasun Silva,Chamari Silva,0721352896,chamari.silva@yahoo.com,Fish Bun,bakery,8,90.00,0%,720.00,Visa,N,3
+TXN1134,"August 26, 2026",09:22:22,galle,Kasun Silva,Hiruni Wickramasinghe,076 752 0284,hiruni.wickramasinghe@hotmail.com,  Bread Loaf ,bakery,8,160.00,0%,1280.00,Online,Y,3
+TXN1046,2026-08-06,10:32:37,Colombo 07,Dilani  Fernando,Lakmal Gunasekara,+94773551903,lakmal.gunasekara@hotmail.com,Tea Leaves (200g),BEVERAGES,6,437.00,5%,2490.90,Cash ,Y,4
+TXN1151,10/08/2026,12:49 PM,Colombo 07,Kasun Silva,Isuru Perera,075 379 9805,isuru.perera@outlook.com,BISCUITS PACK,Snacks,8,180.00,10%,1296.00,Cash,N,1
+TXN1060,09-28-26,10:43:59,Colombo 07,Nimal Perera,N/A,0000000000,saman.wickramasinghe@outlook.com,Bread Loaf,bakery,7,160.00,15%,952.00,Cash ,TRUE,
+TXN1178,2026/08/12,11:43:13,colombo 07,nimal perera,Amal Fernando,0784595669,amal.fernando@yahoo.com,  Fish - Balaya (1kg) ,Meat,5,980.00,0.05,4655.00,QR Pay,Y,5
+TXN1057,"August 17, 2026",13:01:11,Colombo 07,Kasun Silva,Amal Fernando,070 701 0308,amal.fernando@yahoo.com,milk powder (400g),Dairy,5,1150.00,0%,5750.00,Credit Card,,
+TXN1196,2026/09/22,11:35:24,Colombo 07,Dilani  Fernando,Amal Silva,0786110305,amal.silva@yahoo.com,ginger beer (1l),Drinks,1,357.00,0.1,321.30,Cash ,TRUE,
+TXN1094,2026-09-25,17:35:12,Kandy ,Dilani Fernando,Isuru Gunasekara,0721759041,isuru.gunasekara@hotmail.com,coconut oil (1l), Groceries,3,980.00,0.15,2499.00,Visa,yes,
+TXN1114,"August 12, 2026",19:42,MAHARAGAMA,Kasun Silva,Lakmal Perera,0782221118,lakmal.perera@yahoo.com,Fish Bun,Bakery,4,90.00,0%,360.00,Cash,No,
+TXN1223,2026/08/30,7:50 PM,Kandy ,Nimal Perera,Sanduni Gunasekara,072-4171246,sanduni.gunasekara@gmail.com,Soap Bar,HOUSEHOLD,2,120.00,10%,216.00,Cash ,TRUE,4
+TXN1039,2026/09/30,11:59 AM,galle,KASUN SILVA,Tharindu Rajapaksa,0778617381,tharindu.rajapaksa@gmail.com,chips pack,Snacks,5,220.00,0%,1100.00,Online,Y,3
+TXN1202,07/09/2026,4:50 PM,Galle,KASUN SILVA,Isuru Bandara,070 476 3253,isuru.bandara@hotmail.com,Dhal (1kg),Grocery,4,441.00,0.0,1764.00,CARD,TRUE,5
+TXN1150,2026/08/21,8:55 PM,Colombo 07,Dilani  Fernando,Sanduni Rajapaksa,0717238933,sanduni.rajapaksa@yahoo.com,Rice (5kg),Grocery,8,1250.00,10,9000.00,Visa,No,five
+TXN1044,12 Aug 2026,21:30,MAHARAGAMA,nimal perera,Saman Fernando,0755896624,saman.fernando@outlook.com,tea leaves (200g),beverages,4,460.00,5%,1748.00,Card,yes,
+TXN1153,09-29-26,5:50 PM,galle,Kasun Silva,Saman Bandara,+94707189439,saman.bandara@yahoo.com,Sugar (1kg), Groceries,5,290.00,0.0,1450.00,Cash,N,2
+TXN1029,05/09/2026,6:04 PM,Colombo 07,Dilani  Fernando,Saman Bandara,0701873851,saman.bandara@outlook.com,Ginger Beer (1L),beverages,7,340.00,20%,1904.00,qr pay,Y,2
+TXN1188,2026/08/07,10:13 AM,Colombo 07,Dilani Fernando,Lakmal Silva,+94765240244,lakmal.silva@hotmail.com,  Rice (5kg) ,Groceries,2,1250.00,5,2375.00,qr pay,Y,4
+TXN1066,08-30-26,17:27:36,colombo 07,Dilani Fernando,Amal Gunasekara,0708713396,amal.gunasekara@gmail.com,toothpaste,Household,6,340.00,5,"Rs 4,500",QR Pay,,
+TXN1065,02/10/2026,20:08:48,Galle,Dilani Fernando,Lakmal Perera,0704429650,lakmal.perera@outlook.com,Biscuits Pack,SNACKS,5,180.00,0.0,900.00,QR Pay,Y,4
+TXN1208,"September 12, 2026",21:26:09,colombo 07,Ruwan Jayasinghe,Amal Fernando,+94785226314,amal.fernando@gmail.com,  Bottled Water (1.5L) ,BEVERAGES,1,130.00,0.0,130.00,cash,Yes,4
+TXN1210,2026/10/08,8:55 PM,Negombo,Nimal Perera,Lakmal Rajapaksa,077-3417186,lakmal.rajapaksa@outlook.com,YOGHURT CUP,dairy,4,110.00,15%,374.00,Cash,Yes,5
+TXN1156,"September 20, 2026",09:09,MAHARAGAMA,Ruwan Jayasinghe,Tharindu Jayawardena,0704400953,tharindu.jayawardena@yahoo.com,bread loaf,Bakery,6,160.00,5,912.00,Cash,,3
+TXN1034,00/00/0000,11:25,Galle,KASUN SILVA,Hiruni Bandara,078-1289293,hiruni.bandara@gmail.com,Toothpaste,HOUSEHOLD,8,323.00,15,-,CARD,TRUE,3
+TXN1064,11 Aug 2026,6:27 PM,MAHARAGAMA,Ruwan Jayasinghe,Pradeep Perera,0772368710,pradeep.perera@outlook.com,Biscuits Pack,Snacks,1,180.00,0,180.00,CARD,No,3
+TXN1071,09-06-26,09:35:43,Galle,Dilani Fernando,Isuru Perera,078 661 4484,isuru.perera@gmail.com,  Fish Bun ,Bakary,7,90.00,20%,504.00,cash,No,5
+TXN1233,2026/09/20,11:24,Negombo,Dilani Fernando,Sanduni Bandara,072-1141240,sanduni.bandara@gmail.com,Fish Bun,Bakery,3,90.00,0,270.00,Cash,yes,4
+TXN1274,03 Oct 2026,2:28 PM,galle,Nimal Perera,Amal Bandara,0714638539,amal.bandara@hotmail.com,BOTTLED WATER (1.5L),Drinks,8,136.50,20%,873.60,Cash,Y,2
+TXN1128,2026/09/11,8:35 PM,MAHARAGAMA,KASUN SILVA,Lakmal Wickramasinghe,0704352088,lakmal.wickramasinghe@yahoo.com,chicken (1kg),Meat & Fish,7,1350.00,20%,7560.00,CARD,,2
+TXN1033,09-18-26,1:17 PM,Galle,nimal perera,Isuru Fernando,0754558780,isuru.fernando@outlook.com,CHIPS PACK,snacks,6,220.00,5%,1254.00,Cash,false,4
+TXN1022,"September 07, 2026",21:00:19,Kandy,Ruwan Jayasinghe,Lakmal Fernando,076-6049101,lakmal.fernando@hotmail.com,GINGER BEER (1L),Drinks,3,340.00,0.05,969.00,Credit Card,,
+TXN1123,00/00/0000,2:27 PM,galle,KASUN SILVA,Tharindu Bandara,+94754827527,tharindu.bandara@outlook.com,Sugar (1kg), Groceries,7,290.00,0,2030.00,Cash,No,1
+TXN1073,2026-09-09,12:54,Kandy ,Dilani  Fernando,Hiruni Jayawardena,071-3307963,hiruni.jayawardena@yahoo.com,  Fish Bun ,Bakary,3,90.00,0%,270.00,Online,TRUE,
+TXN1007,"October 04, 2026",20:59,galle,Dilani Fernando,Sanduni Jayawardena,+94717273233,sanduni.jayawardena@yahoo.com,Yoghurt Cup,Dairy,2,104.50,0,209.00,Card,N,1
+TXN1016,15/08/2026,18:40:54,Kandy ,Ruwan Jayasinghe,Nadeeka Rajapaksa,0724533779,nadeeka.rajapaksa@outlook.com,Fish - Balaya (1kg),Meat,2,931.00,0.1,1675.80,Card,Yes,1
+TXN1272,2026-08-26,19:28:40,Colombo 07,nimal perera,Isuru Fernando,077 307 2728,isuru.fernando@gmail.com,biscuits pack,snacks,8,180.00,0.0,1440.00,Visa,false,1
+TXN1206,2026-13-05,2:16 PM,Galle,Nimal Perera,Pradeep Jayawardena,070-6384429,pradeep.jayawardena@hotmail.com,Fish Bun,Bakary,4,85.50,0.1,307.80,Credit Card,Yes,3
+TXN1242,07/09/2026,10:45 AM,colombo 07,Dilani  Fernando,Isuru Jayawardena,+94758333427,isuru.jayawardena@hotmail.com,Tea Leaves (200g),Drinks,-3,460.00,10%,1656.00,CARD,N,5
+TXN1167,22/08/2026,15:04,Colombo-07,Nimal Perera,Isuru Gunasekara,0709044494,isuru.gunasekara@yahoo.com,Tea Leaves (200g),Beverages,7,460.00,5%,3059.00,cash,Y,4
+TXN1014,06/08/2026,12:25 PM,Galle,Ruwan Jayasinghe,Pradeep Wickramasinghe,0724426900,pradeep.wickramasinghe@outlook.com,Chips Pack,Snacks,2,220.00,0.15,374.00,qr pay,No,1
+TXN1250,18/09/2026,4:43 PM,Colombo-07,nimal perera,Isuru Jayawardena,0722062698,isuru.jayawardena@hotmail.com,Detergent (1kg),HOUSEHOLD,3,610.00,10,1647.00,Card,No,5
+TXN1223,2026/08/30,21:42,Kandy ,Nimal Perera,Sanduni Gunasekara,072-4171246,sanduni.gunasekara@gmail.com,Soap Bar,HOUSEHOLD,2,120.00,10%,216.00,Cash ,TRUE,4
+TXN1147,"August 10, 2026",18:11:48,Colombo 07,Nimal Perera,Nadeeka Gunasekara,078-8060918,nadeeka.gunasekara@outlook.com,Soap Bar,Household,1,120.00,0,120.00,Cash,Yes,1
+TXN1280,12/09/2026,17:43:21,Colombo 07,Kasun Silva,Amal Rajapaksa,0766293259,amal.rajapaksa@gmail.com,Toothpaste,Home,8,340.00,0.15,2312.00,Online,Y,5
+TXN1160,05 Sep 2026,16:30,Galle,Ruwan Jayasinghe,Pradeep Jayawardena,N/A,pradeep.jayawardena@hotmail.com,fish - balaya (1kg),meat,8,980.00,0%,7840.00,Online,Yes,4
+TXN1016,15/08/2026,18:40:54,Kandy ,Ruwan Jayasinghe,Nadeeka Rajapaksa,0724533779,nadeeka.rajapaksa@outlook.com,Fish - Balaya (1kg),Meat,2,931.00,0.1,1675.80,Card,Yes,1
+TXN1066,08-30-26,17:27:36,colombo 07,Dilani Fernando,Amal Gunasekara,0708713396,amal.gunasekara@gmail.com,toothpaste,Household,6,340.00,5,"Rs 4,500",QR Pay,,
+TXN1143,02 Sep 2026,18:05,Colombo 07,Kasun Silva,Nadeeka Perera,+94756125594,nadeeka.perera@yahoo.com,Fish Bun,Bakery,2,90.00,15%,153.00,Visa,,1
+TXN1199,2026-10-10,2:42 PM,Negombo,nimal perera,Sanduni Fernando,0000000000,sanduni.fernando@yahoo.com,dhal (1kg), Groceries,7,441.00,5%,2932.65,Card,false,3
+TXN1185,2026-09-21,1:48 PM,Kandy,Nimal Perera,Amal Perera,076 434 5615,amal.perera@outlook.com,Tea Leaves (200g),beverages,7,460.00,5%,3059.00,Cash ,TRUE,3
+TXN1077,29 Aug 2026,7:53 PM,MAHARAGAMA,Ruwan Jayasinghe,Isuru Fernando,071-1642620,abc@,Fish Bun,Bakery,1,90.00,0%,90.00,Card,N,N/A
+TXN1190,2026/08/01,19:06:57,Kandy,Ruwan Jayasinghe,Saman Bandara,0712511336,saman.bandara@gmail.com,Chicken (1kg),MEAT,1,1282.50,0%,1282.50,Card,Y,
+TXN1151,10/08/2026,12:49 PM,Colombo 07,Kasun Silva,Isuru Perera,075 379 9805,isuru.perera@outlook.com,BISCUITS PACK,Snacks,8,180.00,10%,1296.00,Cash,N,1
+TXN1235,26/08/2026,9:40 PM,Negombo,Dilani  Fernando,Hiruni Perera,+94718071943,hiruni.perera@hotmail.com,Ginger Beer (1L),Drinks,3,323.00,0%,969.00,CARD,No,
+TXN1176,02/10/2026,8:54 PM,Colombo 07,Kasun Silva,Nadeeka Silva,0729502613,nadeeka.silva@hotmail.com,Tea Leaves (200g),Beverages,6,460.00,10%,2484.00,Cash,,1
+TXN1010,28/08/2026,09:06:42,Negombo,Ruwan Jayasinghe,Pradeep Bandara,+94718935169,pradeep.bandara@hotmail.com,soap bar,Household,3,114.00,10%,307.80,Cash,false,
+TXN1042,11 Sep 2026,09:20:16,Colombo 07,Dilani  Fernando,Lakmal Bandara,+94727718473,lakmal.bandara@gmail.com,BREAD LOAF,Bakery,2,160.00,0.0,320.00,CARD,Yes,2
+TXN1074,17 Aug 2026,13:43,MAHARAGAMA,nimal perera,Nadeeka Fernando,0778342941,nadeeka.fernando@gmail.com,  Chips Pack ,SNACKS,7,$3.50,0%,1540.00,Visa,N,3
+TXN1075,"August 25, 2026",16:26,galle,Kasun Silva,Hiruni Bandara,0785727345,hiruni.bandara@hotmail.com,Soap Bar,HOUSEHOLD,6,114.00,10,615.60,Visa,No,
+TXN1203,2026/08/02,11:18,Colombo 07,Kasun Silva,Hiruni Jayawardena,0777169672,hiruni.jayawardena@yahoo.com,  Dhal (1kg) , Groceries,5,420.00,10%,1890.00,CARD,Yes,4
+TXN1244,08/10/2026,09:09:00,Kandy,Dilani Fernando,Tharindu Rajapaksa,+94718355410,tharindu.rajapaksa@gmail.com,Dhal (1kg),Grocery,1,420.00,0,,Credit Card,Yes,3
+TXN1090,"August 06, 2026",6:01 PM,Kandy ,Dilani Fernando,N/A,077 453 6777,pradeep.rajapaksa@hotmail.com,Biscuits Pack,SNACKS,1,180.00,0%,180.00,Online,false,3
+TXN1107,2026-08-15,6:13 PM,MAHARAGAMA,Nimal Perera,Chamari Fernando,071-6504900,chamari.fernando@hotmail.com,biscuits pack,Snacks,1,189.00,0.1,170.10,QR Pay,false,4
+TXN1084,21/08/2026,20:41:23,colombo 07,nimal perera,Pradeep Bandara,0703117788,pradeep.bandara@gmail.com,DETERGENT (1KG),household,1,610.00,0.2,488.00,cash,TRUE,4
+TXN1276,08 Sep 2026,10:07:44,Negombo,nimal perera,Saman Gunasekara,+94782089275,saman.gunasekara@outlook.com,SUGAR (1KG),groceries,6,290.00,5%,1653.00,qr pay,Yes,1
+TXN1145,12 Oct 2026,17:43,Colombo 07,Nimal Perera,Nadeeka Bandara,0724574477,nadeeka.bandara@yahoo.com,Detergent (1kg),HOUSEHOLD,1,640.50,15,"1,2500.00",CARD,TRUE,
+---,,,,,,,,,,,,,,,,
+TXN1230,08-29-26,9:25 AM,Negombo,Nimal Perera,Isuru Perera,077-5418274,isuru.perera@yahoo.com,Ginger Beer (1L),BEVERAGES,4,340.00,5,1292.00,cash,N,5
+TXN1130,06/08/2026,4:47 PM,galle,KASUN SILVA,Lakmal Silva,070-2654343,lakmal.silva@outlook.com,Chips Pack,SNACKS,7,220.00,20,1232.00,CARD,,
+TXN1121,2026-10-12,09:43:59,Colombo-07,nimal perera,Chamari Jayawardena,078 897 7571,chamari.jayawardena@outlook.com,Bread Loaf,Bakery,2,168.00,0,336.00,Cash,N,5
+TXN1239,2026-09-20,12:39,colombo 07,Dilani Fernando,Hiruni Perera,0707660764,hiruni.perera@gmail.com,Yoghurt Cup,DAIRY,2,LKR 420,0.0,220.00,Online,Y,2
+TXN1006,2026/09/19,4:48 PM,Negombo,Nimal Perera,Sanduni Rajapaksa,0761192619,sanduni.rajapaksa@gmail.com,sugar (1kg),groceries,7,304.50,0.05,2024.92,Cash,yes,5
+TXN1174,19/09/2026,5:38 PM,colombo 07,Nimal Perera,Hiruni Perera,+94715620682,hiruni.perera@hotmail.com,Fish - Balaya (1kg),meat,8,1029.00,10%,7408.80,Cash ,,3
+TXN1028,2026/09/21,14:08:55,Maharagama,Nimal Perera,Pradeep Perera,0751454696,pradeep.perera@gmail.com,bread loaf,bakery,999,160.00,0%,480.00,Credit Card,TRUE,3
+TXN1158,11/10/2026,10:12:52,Negombo,KASUN SILVA,,070 120 0603,saman.fernando@gmail.com,  Bottled Water (1.5L) ,Beverages,4,130.00,5,494.00,Card,Yes,1
+TXN1040,2026/08/10,12:44:25,Colombo7,nimal perera,Tharindu Rajapaksa,+94753086308,tharindu.rajapaksa@hotmail.com,milk powder (400g),Dairy,1,1150.00,20%,920.00,CARD,TRUE,5
+TXN1240,"August 22, 2026",12:35,Kandy ,Kasun Silva,Isuru Wickramasinghe,0000000000,isuru.wickramasinghe@hotmail.com,DETERGENT (1KG),HOUSEHOLD,1,-120,0.15,518.50,Visa,yes,3
+TXN1124,2026-08-20,08:19:28,Galle,Nimal Perera,Nadeeka Gunasekara,0727051545,nadeeka.gunasekara@gmail.com,Fish - Balaya (1kg),meat,7,931.00,0.2,5213.60,Credit Card,false,1
+TXN1045,"September 13, 2026",3:22 PM,Kandy ,Ruwan Jayasinghe,Unknown,0000000000,tharindu.bandara@hotmail.com,Tea Leaves (200g),beverages,1.5,460.00,0%,2300.00,qr pay,false,2
+TXN1269,26/08/2026,14:25,galle,KASUN SILVA,null,+94776450844,hiruni.bandara@hotmail.com,  Chicken (1kg) ,Meat & Fish,4,1350.00,0.0,5400.00,qr pay,Yes,5
+TXN1263,2026-09-04,8:18 AM,colombo 07,Kasun Silva,Amal Silva,+94755551832,amal.silva@outlook.com,CHIPS PACK,Snacks,1,220.00,15,187.00,Credit Card,No,2
+TXN1237,15 Sep 2026,18:09,Negombo,Ruwan Jayasinghe,Hiruni Bandara,070 739 3310,hiruni.bandara@outlook.com,EGGS (10PK),Diary,6,494.00,10%,-,Card,Y,3
+TXN1142,2026-08-17,21:10:28,Colombo 07,Ruwan Jayasinghe,Amal Perera,0708710502,amal.perera@gmail.com,  Biscuits Pack ,snacks,8,180.00,15,1224.00,QR Pay,yes,1
+TXN1072,"September 14, 2026",14:41:50,Maharagama,,Lakmal Fernando,076 242 1349,lakmal.fernando@outlook.com,  Milk Powder (400g) ,Dairy,5,1092.50,0.15,4643.12,Visa,TRUE,1
+,,,,,,,,,,,,,,,,
+TXN1245,19/08/2026,21:16:52,Colombo 07,Nimal Perera,Lakmal Silva,076 888 7754,lakmal.silva@yahoo.com,Sugar (1kg),Grocery,1,290.00,0.2,232.00,Cash,Yes,2
+TXN1057,"August 17, 2026",13:01:11,Colombo 07,Kasun Silva,Amal Fernando,070 701 0308,amal.fernando@yahoo.com,milk powder (400g),Dairy,5,1150.00,0%,5750.00,Credit Card,,
+TXN1187,2026-08-22,13:45,colombo 07,KASUN SILVA,Chamari Fernando,0711367643,chamari.fernando@yahoo.com,CHEESE SLICES,Dairy,7,650.00,0%,4550.00,Online,No,
+TXN1246,08-13-26,15:40,Negombo,Nimal Perera,Tharindu Wickramasinghe,071 170 7762,tharindu.wickramasinghe@gmail.com,Bottled Water (1.5L),Beverages,4,130.00,5%,"1,2500.00",Online,false,3
+TXN1020,14/09/2026,17:16,galle,Ruwan Jayasinghe,Sanduni Wickramasinghe,0702935113,sanduni.wickramasinghe@outlook.com,  Fish - Balaya (1kg) ,Meat & Fish,7,931.00,0.2,5213.60,qr pay,No,4
+TXN1018,16/09/2026,21:10,colombo 07,Nimal Perera,Chamari Silva,0727817881,chamari.silva@yahoo.com,  Eggs (10pk) ,DAIRY,1,520.00,0.0,520.00,Online,N,3
+TXN1186,08-14-26,3:46 PM,Kandy ,Dilani Fernando,Tharindu Fernando,+94701767026,tharindu.fernando@outlook.com,  Milk Powder (400g) ,dairy,7,1207.50,10,7607.25,Credit Card,TRUE,
+TXN1209,10-08-26,4:06 PM,Galle,nimal perera,Pradeep Silva,0781763646,pradeep.silva@gmail.com,Coconut Oil (1L),Grocery,1,931.00,0.15,791.35,CARD,Yes,4
+TXN1136,10 Sep 2026,16:32:41,colombo 07,KASUN SILVA,Isuru Perera,+94753290672,isuru.perera@yahoo.com,yoghurt cup,Diary,8,115.50,0.0,924.00,QR Pay,No,5
+TXN1255,09-27-26,08:19,Negombo,Nimal Perera,N/A,076 127 3509,amal.rajapaksa@yahoo.com,Bottled Water (1.5L),beverages,7,130.00,15%,773.50,Cash,,3
+TXN1120,12 Oct 2026,14:24:35,Colombo 07,KASUN SILVA,Tharindu Silva,0771531577,tharindu.silva@gmail.com,  Bottled Water (1.5L) ,beverages,4,123.50,0%,494.00,Credit Card,false,
+TXN1254,08-24-26,14:48:40,Negombo,,Nadeeka Bandara,0726287423,nadeeka.bandara@outlook.com,YOGHURT CUP,dairy,7,115.50,0.0,808.50,Visa,yes,3
+TXN1004,2026-08-22,11:52:02,colombo 07,Dilani Fernando,Lakmal Rajapaksa,0774684531,lakmal.rajapaksa@outlook.com,Sugar (1kg), Groceries,4,290.00,5,1102.00,Cash,,4
+TXN1145,12 Oct 2026,17:43,Colombo 07,Nimal Perera,Nadeeka Bandara,0724574477,nadeeka.bandara@yahoo.com,Detergent (1kg),HOUSEHOLD,1,640.50,15,"1,2500.00",CARD,TRUE,
+TXN1095,16/08/2026,5:32 PM,Colombo 07,Nimal Perera,Isuru Wickramasinghe,0767133857,isuru.wickramasinghe@yahoo.com,Chips Pack,Snack,3,220.00,0.05,627.00,Visa,,2
+TXN1115,01 Sep 2026,16:41:22,Galle,Dilani Fernando,Sanduni Wickramasinghe,078-5748945,sanduni.wickramasinghe@hotmail.com,soap bar,HOUSEHOLD,4,$3.50,0%,480.00,Cash ,,
+TXN1180,09-06-26,12:41 PM,Galle,Kasun Silva,Hiruni Silva,0725638619,nimal.gmail.com,CHIPS PACK,snacks,5,209.00,0%,,qr pay,false,
+TXN1195,05 Sep 2026,15:51:36,Colombo 07,Dilani  Fernando,Sanduni Gunasekara,+94754942645,sanduni.gunasekara@gmail.com,bread loaf,bakery,1,168.00,0%,168.00,Credit Card,Yes,1
+TXN1229,"September 13, 2026",15:49:15,MAHARAGAMA,KASUN SILVA,Sanduni Rajapaksa,+94778428425,sanduni.rajapaksa@hotmail.com,EGGS (10PK),Dairy,999,546.00,0.0,1092.00,Card,yes,N/A
+TXN1207,2026/09/11,6:49 PM,colombo 07,Dilani  Fernando,Sanduni Perera,0772098434,sanduni.perera@yahoo.com,Cheese Slices,Diary,2,650.00,0%,1300.00,Cash ,Y,1
+TXN1202,07/09/2026,4:50 PM,Galle,KASUN SILVA,Isuru Bandara,070 476 3253,isuru.bandara@hotmail.com,Dhal (1kg),Grocery,4,441.00,0.0,1764.00,CARD,TRUE,5
+TXN1259,10 Oct 2026,16:12:31,galle,Kasun Silva,Lakmal Gunasekara,078-3187332,lakmal.gunasekara@yahoo.com,DHAL (1KG), Groceries,7,420.00,0%,2940.00,Cash,No,3
+TXN1231,24/08/2026,11:12,galle,Dilani Fernando,Chamari Jayawardena,0775061034,chamari.jayawardena@outlook.com,Fish - Balaya (1kg),Meat,4,980.00,15%,3332.00,Online,,5
+TXN1092,29 Sep 2026,21:39,Maharagama,Dilani  Fernando,Chamari Fernando,0701849015,chamari.fernando@outlook.com,CHICKEN (1KG),Meat & Fish,,1350.00,5%,2565.00,QR Pay,,5
+TXN1216,23/08/2026,09:16,Colombo 07,KASUN SILVA,Hiruni Wickramasinghe,0704671175,hiruni.wickramasinghe@hotmail.com,YOGHURT CUP,DAIRY,3,104.50,0.15,266.47,Credit Card,,1
+TXN1232,09/10/2026,20:58:32,colombo 07,Kasun Silva,-,075-5609255,pradeep.wickramasinghe@hotmail.com,Rice (5kg),Groceries,1,1250.00,0.0,1250.00,Credit Card,Yes,five
+TXN1211,20/09/2026,10:14:39,Kandy,Nimal Perera,Isuru Jayawardena,0759599207,isuru.jayawardena@yahoo.com,  Chips Pack ,Snacks,2,220.00,0.0,440.00,Online,No,3
+TXN1070,08-25-26,7:05 PM,Maharagama,Nimal Perera,Sanduni Fernando,0708558523,sanduni.fernando@gmail.com,  Biscuits Pack ,SNACKS,6,189.00,0.05,1077.30,Visa,Y,3
+TXN1043,16 Sep 2026,19:31,galle,Dilani  Fernando,Amal Jayawardena,0723198037,amal.jayawardena@outlook.com,  Detergent (1kg) ,household,8,579.50,5,4404.20,Visa,Yes,5
+TXN1069,26 Sep 2026,15:02:03,Galle,Nimal Perera,Amal Wickramasinghe,076 224 4712,amal.wickramasinghe@outlook.com,Soap Bar,HOUSEHOLD,5,120.00,0.1,540.00,qr pay,Yes,4
+TXN1222,10-04-26,9:02 PM,colombo 07,Kasun Silva,Nadeeka Perera,+94788239315,nadeeka.perera@hotmail.com,toothpaste,Home,2,340.00,5%,646.00,CARD,Y,3
