@@ -124,10 +124,11 @@ def auto_clean_dataframe(
             txn_col_candidate = c
             break
 
+    num_cols = len(cleaned_df.columns)
     is_junk = cleaned_df.apply(
         lambda row: (
             (txn_col_candidate and str(row[txn_col_candidate]).strip() in ['---', '===', '', 'nan', 'None']) or
-            row.isna().sum() >= (len(cleaned_df.columns) - 2) or
+            (row.isna().sum() >= (num_cols - 2) if num_cols >= 4 else row.isna().all()) or
             all(pd.isna(x) or str(x).strip() in ['-', '--', '---', ''] for x in row.values)
         ),
         axis=1
