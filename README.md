@@ -1,5 +1,6 @@
 # 🧘 ZenData - Automated Data Cleaning & Semantic Hygiene Platform
 
+[![ZenData CI Pipeline](https://github.com/naveenmariopereradev02/ZenData/actions/workflows/ci.yml/badge.svg)](https://github.com/naveenmariopereradev02/ZenData/actions/workflows/ci.yml)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.115%2B-teal.svg)
@@ -8,9 +9,11 @@
 
 **ZenData** brings peace, clarity, and mathematical rigor to chaotic tabular data. A modern, web-based SaaS platform engineered for analysts and businesses to drag & drop raw messy spreadsheets, run automated multi-pillar health audits, preview interactive data corrections, and export enterprise-grade cleaned datasets.
 
-## 🌐 Live Demo
+## 🌐 Live Demo & Documentation
 - **Live Web Application:** [https://zendata-frontend.onrender.com](https://zendata-frontend.onrender.com)
 - **Live FastAPI Documentation (Swagger UI):** [https://zendata-backend.onrender.com/docs](https://zendata-backend.onrender.com/docs)
+- **System Architecture Specification:** [Documentation/ARCHITECTURE.md](Documentation/ARCHITECTURE.md)
+- **REST API Contract Specification:** [Documentation/API_SPECIFICATION.md](Documentation/API_SPECIFICATION.md)
 
 ---
 
@@ -28,9 +31,10 @@
   - Recomputes missing, string-corrupted (`Rs 4,500`), or mathematically mismatched totals.
 
 ### 2. 🔍 Human-in-the-Loop Review & Cell-Level Editing
-- Live inline double-click table editing with keyboard shortcuts (`Enter` to save, `Esc` to cancel).
-- Selective Fix Approval: granularly toggle which automated rules to apply and which to skip.
-- Automated `needs_review` and `review_reasons` columns added to output datasets for easy filtering and compliance audit.
+- **Smart Table Search & Filter Toolbar:** Real-time text search across columns with a one-click `⚠️ Flagged Rows Only` filter to instantly isolate records requiring manual attention.
+- **Live Inline Cell Editor:** Double-click any table cell with keyboard shortcuts (`Enter` to save, `Esc` to cancel) and instant health score recalculation.
+- **Selective Fix Approval:** Granularly toggle which automated rules to apply and which to skip.
+- **Automated Audit Columns:** Standardized `needs_review` and `review_reasons` columns appended to exported datasets for compliance and auditability.
 
 ### 3. 📊 Executive Multi-Format Export Hub
 - **Executive PDF Audit Report:** Landscape quality scorecard generated via ReportLab featuring grade gauges, four health pillars, transformation changelog, and column profiles.
@@ -90,6 +94,15 @@ npm install
 npm run dev
 ```
 Open your browser at `http://localhost:3000`
+
+### 4. Run Automated Test Suite
+```bash
+cd backend
+# Run unit & integration tests
+python3 -m unittest discover -s tests -v
+# or via npm script
+npm test
+```
 
 ---
 
