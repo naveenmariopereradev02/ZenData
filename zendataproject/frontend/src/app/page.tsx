@@ -30,6 +30,8 @@ import {
   FileText,
   FileCode,
   ChevronDown,
+  Search,
+  Filter,
 } from "lucide-react";
 
 const BACKEND_URL =
@@ -90,6 +92,10 @@ export default function ZenDataApp() {
 
   // Feature 2: Multi-Format Export Dropdown State
   const [showExportMenu, setShowExportMenu] = useState<boolean>(false);
+
+  // Feature 3: Smart Table Search & "Needs Review" Filter State
+  const [tableSearchQuery, setTableSearchQuery] = useState<string>("");
+  const [showFlaggedOnly, setShowFlaggedOnly] = useState<boolean>(false);
 
   // Cleaning options
   const [cleanOptions, setCleanOptions] = useState({
@@ -155,6 +161,8 @@ export default function ZenDataApp() {
       const issueIds = (data.health_score?.issues || []).map((i: any) => i.id);
       setApprovedIssues(new Set(issueIds));
       setEditedCells(new Set());
+      setTableSearchQuery("");
+      setShowFlaggedOnly(false);
     } catch (err: any) {
       console.error(err);
       setErrorMsg(err.message || "Failed to upload and analyze file.");
@@ -322,6 +330,8 @@ export default function ZenDataApp() {
     setSessionData(null);
     setCleanData(null);
     setErrorMsg(null);
+    setTableSearchQuery("");
+    setShowFlaggedOnly(false);
   }
 
   // Helpers for Health Score
@@ -1532,218 +1542,456 @@ export default function ZenDataApp() {
             )}
 
             {/* TAB CONTENT 2: DATA PREVIEW & DIFF WITH INTERACTIVE CELL EDITING */}
-            {activeTab === "preview" && (
-              <div className="glass-panel" style={{ padding: "1.5rem" }}>
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    marginBottom: "1rem",
-                    flexWrap: "wrap",
-                    gap: "0.75rem",
-                  }}
-                >
-                  <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-                    <span style={{ fontSize: "0.9rem", fontWeight: 600 }}>Viewing:</span>
-                    <button
-                      onClick={() => setPreviewMode("raw")}
-                      className={`zen-btn-secondary ${previewMode === "raw" ? "badge-info" : ""}`}
-                      style={{ padding: "0.35rem 0.85rem", fontSize: "0.8rem" }}
-                    >
-                      Raw Data (First 30 Rows)
-                    </button>
-                    {cleanData && (
+            {activeTab === "preview" && (() => {
+              const activeColumns: string[] = previewMode === "clean" ? cleanData.cleaned_columns : sessionData.columns;
+              const rawBaseRows: any[] = previewMode === "clean" ? cleanData.cleaned_preview_rows : sessionData.preview_rows;
+
+              // Attach original index for stable cell editing
+              const rowsWithIndex = rawBaseRows.map((row: any, idx: number) => ({
+                ...row,
+                __originalIndex: idx,
+              }));
+
+              // Count flagged rows
+              const flaggedCount = rowsWithIndex.filter((row: any) => {
+                if (previewMode === "clean") {
+                  return Boolean(row.needs_review);
+                }
+                const hasMissing = activeColumns.some((col: string) => row[col] === "" || row[col] === null || row[col] === undefined);
+                const hasNegative = activeColumns.some((col: string) => typeof row[col] === "number" && row[col] < 0);
+                return hasMissing || hasNegative;
+              }).length;
+
+              // Filter rows based on search query & flagged toggle
+              const filteredRows = rowsWithIndex.filter((row: any) => {
+                if (showFlaggedOnly) {
+                  if (previewMode === "clean") {
+                    if (!row.needs_review) return false;
+                  } else {
+                    const hasMissing = activeColumns.some((col: string) => row[col] === "" || row[col] === null || row[col] === undefined);
+                    const hasNegative = activeColumns.some((col: string) => typeof row[col] === "number" && row[col] < 0);
+                    if (!hasMissing && !hasNegative) return false;
+                  }
+                }
+                if (tableSearchQuery.trim()) {
+                  const q = tableSearchQuery.toLowerCase();
+                  const matches = activeColumns.some((col: string) => {
+                    const val = row[col];
+                    return val !== null && val !== undefined && String(val).toLowerCase().includes(q);
+                  });
+                  if (!matches) return false;
+                }
+                return true;
+              });
+
+              const isFiltering = Boolean(tableSearchQuery.trim() || showFlaggedOnly);
+
+              return (
+                <div className="glass-panel" style={{ padding: "1.5rem" }}>
+                  {/* Top Bar: Mode Switcher + Metadata */}
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      marginBottom: "1rem",
+                      flexWrap: "wrap",
+                      gap: "0.75rem",
+                    }}
+                  >
+                    <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+                      <span style={{ fontSize: "0.9rem", fontWeight: 600 }}>Viewing:</span>
                       <button
-                        onClick={() => setPreviewMode("clean")}
-                        className={`zen-btn-secondary ${previewMode === "clean" ? "badge-success" : ""}`}
+                        onClick={() => setPreviewMode("raw")}
+                        className={`zen-btn-secondary ${previewMode === "raw" ? "badge-info" : ""}`}
                         style={{ padding: "0.35rem 0.85rem", fontSize: "0.8rem" }}
                       >
-                        Cleaned Data (First 30 Rows)
+                        Raw Data (First 30 Rows)
                       </button>
+                      {cleanData && (
+                        <button
+                          onClick={() => setPreviewMode("clean")}
+                          className={`zen-btn-secondary ${previewMode === "clean" ? "badge-success" : ""}`}
+                          style={{ padding: "0.35rem 0.85rem", fontSize: "0.8rem" }}
+                        >
+                          Cleaned Data (First 30 Rows)
+                        </button>
+                      )}
+                    </div>
+
+                    <span style={{ fontSize: "0.8rem", color: "var(--text-muted)" }}>
+                      {previewMode === "clean"
+                        ? `${cleanData.cleaned_columns.length} Normalized Columns`
+                        : `${sessionData.columns.length} Original Columns`}
+                    </span>
+                  </div>
+
+                  {/* Smart Search & Anomaly Filter Toolbar */}
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      gap: "0.75rem",
+                      padding: "0.75rem 1rem",
+                      background: "rgba(255, 255, 255, 0.02)",
+                      borderRadius: "8px",
+                      border: "1px solid var(--border-subtle)",
+                      marginBottom: "0.85rem",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    {/* Search Input */}
+                    <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", flex: "1 1 240px", maxWidth: 400 }}>
+                      <div
+                        style={{
+                          position: "relative",
+                          width: "100%",
+                          display: "flex",
+                          alignItems: "center",
+                        }}
+                      >
+                        <Search
+                          size={14}
+                          color="var(--text-muted)"
+                          style={{ position: "absolute", left: "0.65rem", pointerEvents: "none" }}
+                        />
+                        <input
+                          type="text"
+                          value={tableSearchQuery}
+                          onChange={(e) => setTableSearchQuery(e.target.value)}
+                          placeholder="Search rows by keyword, city, ID..."
+                          style={{
+                            width: "100%",
+                            padding: "0.4rem 2rem 0.4rem 2rem",
+                            background: "rgba(7, 10, 16, 0.6)",
+                            border: "1px solid var(--border-subtle)",
+                            borderRadius: "6px",
+                            fontSize: "0.8rem",
+                            color: "var(--text-primary)",
+                            outline: "none",
+                            transition: "border-color 0.15s ease",
+                          }}
+                          onFocus={(e) => (e.target.style.borderColor = "var(--zen-emerald)")}
+                          onBlur={(e) => (e.target.style.borderColor = "var(--border-subtle)")}
+                        />
+                        {tableSearchQuery && (
+                          <button
+                            onClick={() => setTableSearchQuery("")}
+                            style={{
+                              position: "absolute",
+                              right: "0.5rem",
+                              background: "none",
+                              border: "none",
+                              color: "var(--text-muted)",
+                              cursor: "pointer",
+                              display: "flex",
+                              alignItems: "center",
+                            }}
+                            title="Clear search"
+                          >
+                            <X size={13} />
+                          </button>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Filter Actions & Counter */}
+                    <div style={{ display: "flex", alignItems: "center", gap: "0.6rem", flexWrap: "wrap" }}>
+                      {/* Flagged / Needs Review Toggle Button */}
+                      <button
+                        onClick={() => setShowFlaggedOnly((prev) => !prev)}
+                        className="zen-btn-secondary"
+                        style={{
+                          padding: "0.38rem 0.75rem",
+                          fontSize: "0.775rem",
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "0.4rem",
+                          border: showFlaggedOnly ? "1px solid var(--zen-amber)" : "1px solid var(--border-subtle)",
+                          background: showFlaggedOnly ? "rgba(245, 158, 11, 0.18)" : "rgba(255, 255, 255, 0.03)",
+                          color: showFlaggedOnly ? "var(--zen-amber-light)" : "var(--text-secondary)",
+                          boxShadow: showFlaggedOnly ? "0 0 12px rgba(245, 158, 11, 0.25)" : "none",
+                          cursor: "pointer",
+                          transition: "all 0.15s ease",
+                        }}
+                      >
+                        <AlertTriangle size={13} color={showFlaggedOnly ? "var(--zen-amber-light)" : "var(--zen-amber)"} />
+                        <span>Flagged Rows Only</span>
+                        <span
+                          style={{
+                            fontSize: "0.68rem",
+                            fontWeight: 700,
+                            padding: "0.08rem 0.4rem",
+                            borderRadius: "10px",
+                            background: showFlaggedOnly ? "rgba(245, 158, 11, 0.35)" : "rgba(255, 255, 255, 0.08)",
+                            color: showFlaggedOnly ? "#ffffff" : "var(--text-muted)",
+                          }}
+                        >
+                          {flaggedCount}
+                        </span>
+                      </button>
+
+                      {/* Reset All Filters if Active */}
+                      {isFiltering && (
+                        <button
+                          onClick={() => {
+                            setTableSearchQuery("");
+                            setShowFlaggedOnly(false);
+                          }}
+                          className="zen-btn-secondary"
+                          style={{ padding: "0.38rem 0.65rem", fontSize: "0.75rem", color: "var(--text-muted)" }}
+                          title="Reset search and filters"
+                        >
+                          Clear
+                        </button>
+                      )}
+
+                      {/* Row Count Badge */}
+                      <span
+                        style={{
+                          fontSize: "0.775rem",
+                          color: "var(--text-muted)",
+                          padding: "0.3rem 0.65rem",
+                          borderRadius: "6px",
+                          background: "rgba(255, 255, 255, 0.03)",
+                          border: "1px solid var(--border-subtle)",
+                        }}
+                      >
+                        Showing <strong style={{ color: "var(--text-primary)" }}>{filteredRows.length}</strong> of {rawBaseRows.length}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Interactive Cell Editing Notice */}
+                  <div
+                    style={{
+                      padding: "0.55rem 1rem",
+                      borderRadius: "8px",
+                      background: "rgba(255, 255, 255, 0.03)",
+                      border: "1px dashed var(--border-subtle)",
+                      marginBottom: "0.85rem",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      fontSize: "0.775rem",
+                      color: "var(--text-muted)",
+                      flexWrap: "wrap",
+                      gap: "0.5rem",
+                    }}
+                  >
+                    <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                      <Edit3 size={14} color="var(--zen-emerald-light)" />
+                      <span>
+                        <strong>Interactive Human-in-the-Loop Editor:</strong> Double-click any cell below to edit. Changes immediately recalculate your Health Score and Visual Analytics.
+                      </span>
+                    </div>
+                    {editedCells.size > 0 && (
+                      <span style={{ color: "var(--zen-emerald-light)", fontWeight: 700 }}>
+                        ✓ {editedCells.size} cell(s) edited
+                      </span>
                     )}
                   </div>
 
-                  <span style={{ fontSize: "0.8rem", color: "var(--text-muted)" }}>
-                    {previewMode === "clean"
-                      ? `${cleanData.cleaned_columns.length} Normalized Columns`
-                      : `${sessionData.columns.length} Original Columns`}
-                  </span>
-                </div>
-
-                {/* Interactive Cell Editing Notice */}
-                <div
-                  style={{
-                    padding: "0.55rem 1rem",
-                    borderRadius: "8px",
-                    background: "rgba(255, 255, 255, 0.03)",
-                    border: "1px dashed var(--border-subtle)",
-                    marginBottom: "0.85rem",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    fontSize: "0.775rem",
-                    color: "var(--text-muted)",
-                    flexWrap: "wrap",
-                    gap: "0.5rem",
-                  }}
-                >
-                  <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                    <Edit3 size={14} color="var(--zen-emerald-light)" />
-                    <span>
-                      <strong>Interactive Human-in-the-Loop Editor:</strong> Double-click any cell below to edit. Changes immediately recalculate your Health Score and Visual Analytics.
-                    </span>
-                  </div>
-                  {editedCells.size > 0 && (
-                    <span style={{ color: "var(--zen-emerald-light)", fontWeight: 700 }}>
-                      ✓ {editedCells.size} cell(s) edited
-                    </span>
-                  )}
-                </div>
-
-                {/* Table */}
-                <div style={{ overflowX: "auto", maxHeight: 440, borderRadius: "8px", border: "1px solid var(--border-subtle)" }}>
-                  <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.8rem", textAlign: "left", fontFamily: "var(--font-mono)" }}>
-                    <thead>
-                      <tr style={{ background: "rgba(255, 255, 255, 0.05)", position: "sticky", top: 0, zIndex: 10 }}>
-                        <th style={{ padding: "0.75rem 1rem", borderBottom: "1px solid var(--border-subtle)", color: "var(--text-muted)" }}>#</th>
-                        {(previewMode === "clean" ? cleanData.cleaned_columns : sessionData.columns).map((col: string, i: number) => (
-                          <th key={i} style={{ padding: "0.75rem 1rem", borderBottom: "1px solid var(--border-subtle)", color: "var(--text-primary)", whiteSpace: "nowrap" }}>
-                            {col}
-                          </th>
-                        ))}
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {(previewMode === "clean" ? cleanData.cleaned_preview_rows : sessionData.preview_rows).map((row: any, rIdx: number) => (
-                        <tr key={rIdx} style={{ borderBottom: "1px solid rgba(255, 255, 255, 0.04)", background: rIdx % 2 === 0 ? "transparent" : "rgba(255, 255, 255, 0.01)" }}>
-                          <td style={{ padding: "0.6rem 1rem", color: "var(--text-muted)" }}>{rIdx + 1}</td>
-                          {(previewMode === "clean" ? cleanData.cleaned_columns : sessionData.columns).map((col: string, cIdx: number) => {
-                            const val = row[col];
-                            const isNeg = typeof val === "number" && val < 0;
-                            const isMissing = val === "" || val === null || val === undefined;
-                            const isEditing = editingCell?.rowIndex === rIdx && editingCell?.column === col;
-                            const wasEdited = editedCells.has(`${previewMode}:${rIdx}:${col}`);
-
-                            if (isEditing) {
-                              return (
-                                <td
-                                  key={cIdx}
-                                  style={{
-                                    padding: "0.35rem 0.5rem",
-                                    background: "rgba(16, 185, 129, 0.15)",
-                                    border: "1px solid var(--zen-emerald)",
-                                    whiteSpace: "nowrap",
-                                  }}
-                                >
-                                  <div style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
-                                    <input
-                                      autoFocus
-                                      value={cellDraftValue}
-                                      onChange={(e) => setCellDraftValue(e.target.value)}
-                                      onKeyDown={(e) => {
-                                        if (e.key === "Enter") handleSaveCellEdit(rIdx, col);
-                                        if (e.key === "Escape") setEditingCell(null);
-                                      }}
-                                      style={{
-                                        background: "#07090e",
-                                        border: "1px solid var(--zen-emerald)",
-                                        color: "#ffffff",
-                                        padding: "0.25rem 0.5rem",
-                                        borderRadius: "4px",
-                                        fontSize: "0.8rem",
-                                        fontFamily: "var(--font-mono)",
-                                        outline: "none",
-                                        minWidth: "100px",
-                                        boxShadow: "0 0 10px rgba(16, 185, 129, 0.35)",
-                                      }}
-                                    />
-                                    <button
-                                      onClick={() => handleSaveCellEdit(rIdx, col)}
-                                      disabled={isSavingCell}
-                                      title="Save (Enter)"
-                                      style={{
-                                        background: "var(--zen-emerald)",
-                                        border: "none",
-                                        color: "#ffffff",
-                                        borderRadius: "4px",
-                                        padding: "0.25rem 0.45rem",
-                                        cursor: "pointer",
-                                        display: "flex",
-                                        alignItems: "center",
-                                      }}
-                                    >
-                                      {isSavingCell ? <RefreshCw size={11} className="animate-spin" /> : <Check size={11} />}
-                                    </button>
-                                    <button
-                                      onClick={() => setEditingCell(null)}
-                                      title="Cancel (Esc)"
-                                      style={{
-                                        background: "rgba(255, 255, 255, 0.1)",
-                                        border: "none",
-                                        color: "var(--text-muted)",
-                                        borderRadius: "4px",
-                                        padding: "0.25rem 0.45rem",
-                                        cursor: "pointer",
-                                        display: "flex",
-                                        alignItems: "center",
-                                      }}
-                                    >
-                                      <X size={11} />
-                                    </button>
-                                  </div>
-                                </td>
-                              );
-                            }
+                  {/* Table */}
+                  <div style={{ overflowX: "auto", maxHeight: 440, borderRadius: "8px", border: "1px solid var(--border-subtle)" }}>
+                    <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "0.8rem", textAlign: "left", fontFamily: "var(--font-mono)" }}>
+                      <thead>
+                        <tr style={{ background: "rgba(255, 255, 255, 0.05)", position: "sticky", top: 0, zIndex: 10 }}>
+                          <th style={{ padding: "0.75rem 1rem", borderBottom: "1px solid var(--border-subtle)", color: "var(--text-muted)" }}>#</th>
+                          {activeColumns.map((col: string, i: number) => (
+                            <th key={i} style={{ padding: "0.75rem 1rem", borderBottom: "1px solid var(--border-subtle)", color: "var(--text-primary)", whiteSpace: "nowrap" }}>
+                              {col}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {filteredRows.length === 0 ? (
+                          <tr>
+                            <td colSpan={activeColumns.length + 1} style={{ padding: "3rem", textAlign: "center", color: "var(--text-muted)" }}>
+                              <Filter size={24} style={{ margin: "0 auto 0.5rem", opacity: 0.5 }} />
+                              <div style={{ fontWeight: 600, color: "var(--text-primary)", marginBottom: "0.25rem", fontSize: "0.9rem" }}>
+                                No matching rows found
+                              </div>
+                              <div style={{ fontSize: "0.75rem", marginBottom: "0.75rem" }}>
+                                {showFlaggedOnly && tableSearchQuery
+                                  ? "No flagged rows match your search query."
+                                  : showFlaggedOnly
+                                  ? "No flagged rows detected in this view."
+                                  : "Try searching for a different keyword or value."}
+                              </div>
+                              <button
+                                onClick={() => {
+                                  setTableSearchQuery("");
+                                  setShowFlaggedOnly(false);
+                                }}
+                                className="zen-btn-secondary"
+                                style={{ padding: "0.3rem 0.75rem", fontSize: "0.75rem" }}
+                              >
+                                Reset Filters
+                              </button>
+                            </td>
+                          </tr>
+                        ) : (
+                          filteredRows.map((row: any) => {
+                            const rIdx = row.__originalIndex;
+                            const isRowFlagged = previewMode === "clean" ? Boolean(row.needs_review) : activeColumns.some((col: string) => row[col] === "" || row[col] === null || row[col] === undefined || (typeof row[col] === "number" && row[col] < 0));
 
                             return (
-                              <td
-                                key={cIdx}
-                                onDoubleClick={() => handleStartCellEdit(rIdx, col, val)}
-                                title="Double-click to edit cell directly"
+                              <tr
+                                key={rIdx}
                                 style={{
-                                  padding: "0.6rem 1rem",
-                                  color: isNeg ? "var(--zen-rose)" : isMissing ? "var(--text-muted)" : "var(--text-secondary)",
-                                  background: wasEdited
-                                    ? "rgba(16, 185, 129, 0.12)"
-                                    : isNeg
-                                    ? "rgba(244, 63, 94, 0.08)"
-                                    : "transparent",
-                                  borderLeft: wasEdited ? "3px solid var(--zen-emerald)" : "none",
-                                  whiteSpace: "nowrap",
-                                  cursor: "pointer",
-                                  transition: "background 0.15s ease",
+                                  borderBottom: "1px solid rgba(255, 255, 255, 0.04)",
+                                  background: isRowFlagged && showFlaggedOnly
+                                    ? "rgba(245, 158, 11, 0.04)"
+                                    : rIdx % 2 === 0
+                                    ? "transparent"
+                                    : "rgba(255, 255, 255, 0.01)",
                                 }}
                               >
-                                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "0.5rem" }}>
-                                  <span>
-                                    {isMissing ? <span style={{ fontStyle: "italic", opacity: 0.5 }}>null</span> : String(val)}
-                                  </span>
-                                  {wasEdited && (
-                                    <span
+                                <td style={{ padding: "0.6rem 1rem", color: "var(--text-muted)", whiteSpace: "nowrap" }}>
+                                  <div style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
+                                    <span>{rIdx + 1}</span>
+                                    {isRowFlagged && (
+                                      <span
+                                        title={row.review_reasons || "Flagged row requires attention"}
+                                        style={{ fontSize: "0.7rem", cursor: "help" }}
+                                      >
+                                        ⚠️
+                                      </span>
+                                    )}
+                                  </div>
+                                </td>
+                                {activeColumns.map((col: string, cIdx: number) => {
+                                  const val = row[col];
+                                  const isNeg = typeof val === "number" && val < 0;
+                                  const isMissing = val === "" || val === null || val === undefined;
+                                  const isEditing = editingCell?.rowIndex === rIdx && editingCell?.column === col;
+                                  const wasEdited = editedCells.has(`${previewMode}:${rIdx}:${col}`);
+
+                                  if (isEditing) {
+                                    return (
+                                      <td
+                                        key={cIdx}
+                                        style={{
+                                          padding: "0.35rem 0.5rem",
+                                          background: "rgba(16, 185, 129, 0.15)",
+                                          border: "1px solid var(--zen-emerald)",
+                                          whiteSpace: "nowrap",
+                                        }}
+                                      >
+                                        <div style={{ display: "flex", alignItems: "center", gap: "0.35rem" }}>
+                                          <input
+                                            autoFocus
+                                            value={cellDraftValue}
+                                            onChange={(e) => setCellDraftValue(e.target.value)}
+                                            onKeyDown={(e) => {
+                                              if (e.key === "Enter") handleSaveCellEdit(rIdx, col);
+                                              if (e.key === "Escape") setEditingCell(null);
+                                            }}
+                                            style={{
+                                              background: "#07090e",
+                                              border: "1px solid var(--zen-emerald)",
+                                              color: "#ffffff",
+                                              padding: "0.25rem 0.5rem",
+                                              borderRadius: "4px",
+                                              fontSize: "0.8rem",
+                                              fontFamily: "var(--font-mono)",
+                                              outline: "none",
+                                              minWidth: "100px",
+                                              boxShadow: "0 0 10px rgba(16, 185, 129, 0.35)",
+                                            }}
+                                          />
+                                          <button
+                                            onClick={() => handleSaveCellEdit(rIdx, col)}
+                                            disabled={isSavingCell}
+                                            title="Save (Enter)"
+                                            style={{
+                                              background: "var(--zen-emerald)",
+                                              border: "none",
+                                              color: "#ffffff",
+                                              borderRadius: "4px",
+                                              padding: "0.25rem 0.45rem",
+                                              cursor: "pointer",
+                                              display: "flex",
+                                              alignItems: "center",
+                                            }}
+                                          >
+                                            {isSavingCell ? <RefreshCw size={11} className="animate-spin" /> : <Check size={11} />}
+                                          </button>
+                                          <button
+                                            onClick={() => setEditingCell(null)}
+                                            title="Cancel (Esc)"
+                                            style={{
+                                              background: "rgba(255, 255, 255, 0.1)",
+                                              border: "none",
+                                              color: "var(--text-muted)",
+                                              borderRadius: "4px",
+                                              padding: "0.25rem 0.45rem",
+                                              cursor: "pointer",
+                                              display: "flex",
+                                              alignItems: "center",
+                                            }}
+                                          >
+                                            <X size={11} />
+                                          </button>
+                                        </div>
+                                      </td>
+                                    );
+                                  }
+
+                                  return (
+                                    <td
+                                      key={cIdx}
+                                      onDoubleClick={() => handleStartCellEdit(rIdx, col, val)}
+                                      title="Double-click to edit cell directly"
                                       style={{
-                                        fontSize: "0.55rem",
-                                        fontWeight: 800,
-                                        color: "var(--zen-emerald-light)",
-                                        background: "rgba(16, 185, 129, 0.25)",
-                                        padding: "0.1rem 0.35rem",
-                                        borderRadius: "4px",
+                                        padding: "0.6rem 1rem",
+                                        color: isNeg ? "var(--zen-rose)" : isMissing ? "var(--text-muted)" : "var(--text-secondary)",
+                                        background: wasEdited
+                                          ? "rgba(16, 185, 129, 0.12)"
+                                          : isNeg
+                                          ? "rgba(244, 63, 94, 0.08)"
+                                          : "transparent",
+                                        borderLeft: wasEdited ? "3px solid var(--zen-emerald)" : "none",
+                                        whiteSpace: "nowrap",
+                                        cursor: "pointer",
+                                        transition: "background 0.15s ease",
                                       }}
                                     >
-                                      EDITED
-                                    </span>
-                                  )}
-                                </div>
-                              </td>
+                                      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "0.5rem" }}>
+                                        <span>
+                                          {isMissing ? <span style={{ fontStyle: "italic", opacity: 0.5 }}>null</span> : String(val)}
+                                        </span>
+                                        {wasEdited && (
+                                          <span
+                                            style={{
+                                              fontSize: "0.55rem",
+                                              fontWeight: 800,
+                                              color: "var(--zen-emerald-light)",
+                                              background: "rgba(16, 185, 129, 0.25)",
+                                              padding: "0.1rem 0.35rem",
+                                              borderRadius: "4px",
+                                            }}
+                                          >
+                                            EDITED
+                                          </span>
+                                        )}
+                                      </div>
+                                    </td>
+                                  );
+                                })}
+                              </tr>
                             );
-                          })}
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                          })
+                        )}
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
-              </div>
-            )}
+              );
+            })()}
 
             {/* TAB CONTENT 3: VISUAL ANALYTICS & CHARTS */}
             {activeTab === "analytics" && (
