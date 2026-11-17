@@ -103,6 +103,19 @@ python3 -m unittest discover -s tests -v
 # or via npm script
 npm test
 ```
+## 🔒 License & Copyright
+
+![License: All Rights Reserved](https://img.shields.io/badge/License-All%20Rights%20Reserved-ef4444?style=flat-square)
+![Usage: Portfolio Evaluation Only](https://img.shields.io/badge/Usage-Portfolio%20Evaluation%20Only-f97316?style=flat-square)
+
+**Copyright © 2026 Naveen Mario Perera. All Rights Reserved.**
+
+This repository and its source code, architecture, and design assets are made publicly visible **strictly for portfolio review and recruitment evaluation purposes**.
+
+- **No Open-Source License Granted:** Under [GitHub Terms of Service (Section D.5)](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) and international copyright law, the absence of an open-source license means all rights are retained by the author.
+- **Strictly Prohibited:** Unauthorized copying, modification, redistribution, academic plagiarism, or commercial use of any part of this codebase without explicit written permission from the author is strictly prohibited.
+
+For permissions or inquiries, contact **naveenmarioperera04@gmail.com**. See [LICENSE](./LICENSE) for full terms.
 
 ---
 
